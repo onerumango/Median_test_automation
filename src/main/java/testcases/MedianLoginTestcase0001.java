@@ -1,5 +1,7 @@
 package testcases;
 
-public class MedianLoginTestcase0001 {
+import base.MedianSpecificMethods;
+
+public class MedianLoginTestcase0001 extends MedianSpecificMethods {
 
 }
