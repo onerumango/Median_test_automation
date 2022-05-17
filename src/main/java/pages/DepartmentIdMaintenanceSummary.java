@@ -7,9 +7,6 @@ public class DepartmentIdMaintenanceSummary extends MedianSpecificMethods{
 		clickElement(locateElement("xpath", props.getProperty("DepartmentIdMaintenanceSummary.New.Xpath")));
 		return this;
 	}
-	public DepartmentIdMaintenanceSummary clickExit() {
-		clickElement(locateElement("xpath", props.getProperty("DepartmentIdMaintenanceSummary.Exit.Xpath")));
-		return this;
-	}
+	
 
 }
