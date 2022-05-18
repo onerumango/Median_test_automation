@@ -19,12 +19,12 @@ public class MedianLogin extends MedianSpecificMethods {
 		
 		
 		public MedianLogin enterCheckerUsername() {
-			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("MakerUserName"));
+			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("CheckerUserName"));
 			return this;
 		}
 		
 		public MedianLogin enterCheckerPassword() {
-			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("MakerPassword"));
+			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("CheckerPassword"));
 			return this;
 		}
 		
