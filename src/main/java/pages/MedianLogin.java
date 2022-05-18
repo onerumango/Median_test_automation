@@ -6,12 +6,24 @@ public class MedianLogin extends MedianSpecificMethods {
 
 
 
-		public MedianLogin enterUsername() {
+		public MedianLogin enterMakerUsername() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("MakerUserName"));
 			return this;
 		}
 		
-		public MedianLogin enterPassword() {
+		public MedianLogin enterMakerPassword() {
+			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("MakerPassword"));
+			return this;
+		}
+		
+		
+		
+		public MedianLogin enterCheckerUsername() {
+			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("MakerUserName"));
+			return this;
+		}
+		
+		public MedianLogin enterCheckerPassword() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("MakerPassword"));
 			return this;
 		}
@@ -28,5 +40,6 @@ public class MedianLogin extends MedianSpecificMethods {
 			wait(15000);
 			return new MedianDashboard();
 		}
+		
 
 }
