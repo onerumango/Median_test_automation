@@ -25,7 +25,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 @SuppressWarnings("unused")
-public class GenericWrapper {
+public class MedianGenericWrapper {
 	
 	public static RemoteWebDriver driver;
 	public static String firstWindow, secondWindow;
@@ -35,7 +35,7 @@ public class GenericWrapper {
 		try {
 			
 			
-			System.setProperty("webdriver.chrome.driver", "F:/AutomationProject/Icust_TestAutomation/drivers/chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", ".//drivers/chromedriver1.exe");
 			  
 			/*
 			 * HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -63,7 +63,7 @@ public class GenericWrapper {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
 			driver.get(url);
-			webDriverWait("Session > Signin | Rumango");
+			webDriverWait("Median -DTB Bank");
 			wait(5000);
 		} catch (Exception e) {
 			System.out.println(e);
