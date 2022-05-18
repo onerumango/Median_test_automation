@@ -4,7 +4,7 @@ import base.MedianSpecificMethods;
 
 public class DepartmentidEdit extends MedianSpecificMethods{
 	public DepartmentidEdit clickEdit() {
-		clickElement(locateElement("xpath", props.getProperty("DepartmentidEdit.Auth.Xpath")));
+		clickElement(locateElement("xpath", props.getProperty("DepartmentidEdit.Edit.Xpath")));
 		return this;
 	}
 	public DepartmentidEdit editDeptid() {
