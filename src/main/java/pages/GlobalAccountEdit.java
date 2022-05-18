@@ -9,7 +9,7 @@ public class GlobalAccountEdit extends MedianSpecificMethods{
   		return this;
       }
 	public GlobalAccountEdit clickGLCodeSave() {
-	   	  clickElement(locateElement("xpath", props.getProperty("GlobalAccountCreate.Save.Xpath")));
+	   	  clickElement(locateElement("xpath", props.getProperty("GlobalAccountEdit.Save.Xpath")));
 	   	  return this;
 	     }
 	}
