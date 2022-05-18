@@ -3,7 +3,7 @@ package pages;
 import base.MedianSpecificMethods;
 
 public class GlobalaccountSummary extends MedianSpecificMethods{
-	public GlobalAccountCreate clickNew() {
+	public GlobalAccountCreate clickGLaccountNew() {
 		clickElement(locateElement("xpath", props.getProperty("GlobalaccountSummary.New.Xpath")));
 		return new GlobalAccountCreate();
 	}

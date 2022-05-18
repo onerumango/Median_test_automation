@@ -11,7 +11,7 @@ public class GlobalAccountCreate extends MedianSpecificMethods{
 		  enterValue(locateElement("xpath", props.getProperty("GlobalAccountCreate.GlDescription.Xpath")), props.getProperty("GlDescription"));
 	  		return this;
 	      }
-	 public GlobalAccountCreate clickDeptSubmit() {
+	 public GlobalAccountCreate clickSave() {
    	  clickElement(locateElement("xpath", props.getProperty("GlobalAccountCreate.Submit.Xpath")));
    	  return this;
      }
