@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.ChromeConsoleLogging">
+      <class name="testcases.MedianLoginCheckerTestcase0002">
         <methods>
-          <include name="setUp"/>
-          <include name="testMethod"/>
-          <include name="tearDown"/>
+          <include name="closeBrowser"/>
+          <include name="runMedianLogin"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- testcases.ChromeConsoleLogging -->
+      </class> <!-- testcases.MedianLoginCheckerTestcase0002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
