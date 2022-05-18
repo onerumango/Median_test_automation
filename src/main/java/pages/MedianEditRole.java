@@ -7,11 +7,7 @@ import base.MedianSpecificMethods;
 
 public class MedianEditRole extends MedianSpecificMethods 
 {
-	public MedianEditRole selectSystemMaintenance() {
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Xpath")));
-		wait(7000);
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.Xpath")));
-		wait(7000);
+	public MedianEditRole selectEdit() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
 		wait(5000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Edit.Xpath")));
@@ -78,11 +74,11 @@ public class MedianEditRole extends MedianSpecificMethods
 	}
 	
 	
-	public MedianEditRole clickSaveButton() {
+	public MedianAuthRole clickSaveButton() {
 		wait(2000);
 		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Edit.Save.Xpath")));
 		wait(5000);
-        return this;
+        return new MedianAuthRole();
 	}
 
 }
