@@ -13,7 +13,7 @@ public class MedianSpecificMethods extends GenericWrapper{
 
 	@BeforeMethod
 	public void launchApplication() throws IOException, InterruptedException {
-		FileInputStream fis = new FileInputStream("./src/main/resources/icust.properties");
+		FileInputStream fis = new FileInputStream("./src/main/resources/median.properties");
 		props = new Properties();
 		props.load(fis);
 		lanuchBrowser("chrome", props.getProperty("Icust_Url"));
