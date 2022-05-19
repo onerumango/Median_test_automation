@@ -182,5 +182,10 @@ public class MedianGenericWrapper {
 		}
 		return str;
 	}
-
+public void alertHandling() {
+	driver.switchTo().alert().dismiss();
+	driver.switchTo().alert().accept();
+	driver.switchTo().alert().getText();
+	driver.switchTo().alert().sendKeys("Text");
+}
 }
