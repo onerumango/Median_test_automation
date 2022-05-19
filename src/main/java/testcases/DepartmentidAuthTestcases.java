@@ -9,7 +9,7 @@ public class DepartmentidAuthTestcases extends MedianSpecificMethods{
 	@Test
 	public void runDepartmentidAuthTestcases() {
 		MedianLogin login = new MedianLogin();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
+		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
 		.clickDeptidscreen().clickUnauthrecord().clickAuth();
 	}
