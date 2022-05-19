@@ -10,8 +10,8 @@ public class MedinEditRoleTC01 extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() {
 		MedianLogin login = new MedianLogin();
-		login.enterCheckerUsername()
-		.enterCheckerPassword()
+		login.enterMakerUsername()
+		.enterMakerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
 		.enterRoleName()
