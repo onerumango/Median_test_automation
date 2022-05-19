@@ -18,6 +18,30 @@ public class MedianDashboard extends MedianSpecificMethods {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.GlobalaccountRestriction.Xpath")));
 		return new GlobalaccountSummary();
 	}
+	public UseraccountRestrictionSummary clickUseraccountRestriction() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.UseraccountRestriction.Xpath")));
+		return new UseraccountRestrictionSummary();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public MedianAddNewRole selectSystemMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Xpath")));
