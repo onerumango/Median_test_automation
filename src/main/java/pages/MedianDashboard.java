@@ -22,6 +22,10 @@ public class MedianDashboard extends MedianSpecificMethods {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.UseraccountRestriction.Xpath")));
 		return new UseraccountRestrictionSummary();
 	}
+	public EmailManagementSummary clickEmailManagement() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.EmailManagement.Xpath")));
+		return new EmailManagementSummary();
+	}
 	
 	
 	

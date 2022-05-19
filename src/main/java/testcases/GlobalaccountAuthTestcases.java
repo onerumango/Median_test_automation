@@ -9,7 +9,7 @@ public class GlobalaccountAuthTestcases extends MedianSpecificMethods{
 	@Test
 	public void runGlobalaccountAuth() {
 		MedianLogin login = new MedianLogin();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
+		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
 		.clickGlobalAccountRestriction().clickUnauthRecord().clickAuth();
 	}
