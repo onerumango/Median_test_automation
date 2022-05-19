@@ -28,20 +28,13 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public MedianAddNewExternalSystem fileUploadMaintenance() {
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
+		wait(7000);
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Xpath")));
+		wait(7000);
+		return new MedianAddNewExternalSystem();
+	}
 	
 	
 	

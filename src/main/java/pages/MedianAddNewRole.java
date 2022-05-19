@@ -84,7 +84,7 @@ public class MedianAddNewRole extends MedianSpecificMethods
 	}
 
 	public MedianAuthRole selectRoleAuth() {
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.New.Xpath")));
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
 		wait(5000);
 		return new MedianAuthRole();
 	}
