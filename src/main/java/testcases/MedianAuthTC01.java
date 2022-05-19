@@ -12,8 +12,8 @@ public class MedianAuthTC01 extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() {
 		MedianLogin login = new MedianLogin();
-		login.enterMakerUsername()
-		.enterMakerPassword()
+		login.enterCheckerUsername()
+		.enterCheckerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
 		.selectRoleAuth()
