@@ -40,6 +40,10 @@ public class MedianLogin extends MedianSpecificMethods {
 			wait(15000);
 			return new MedianDashboard();
 		}
+		public MedianForgotPassword clickForgotPassword() {
+			clickElement(locateElement("xpath", props.getProperty("MedianLogin.Forgotpassword.Xpath")));
+			return new MedianForgotPassword();
+		}
 		
 
 }
