@@ -28,18 +28,17 @@ public class MedianLogin extends MedianSpecificMethods {
 			return this;
 		}
 		
-		public MedianDashboard clickSignInButton() {
+		public MedianDashboard clickSignInButton() throws InterruptedException {
 			clickElement(locateElement("xpath", props.getProperty("MedianLoginPage.GetOTP.Xpath")));
 			/*
 			 * wait(2000); clickElement(locateElement("xpath",
 			 * props.getProperty("IcustLoginPage.SignInButton.Xpath")));
 			 */
-			wait(20000);
+			Thread.sleep(20000);
 			clickElement(locateElement("xpath", props.getProperty("MedianLoginPage.verify.Xpath")));
 			webDriverWait("Rumango");
-			wait(15000);
+			wait(3000);
 			return new MedianDashboard();
 		}
 		
-
 }

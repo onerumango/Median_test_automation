@@ -8,7 +8,7 @@ import pages.MedianAddNewRole;
 
 public class MedianNewRoleTC01 extends MedianSpecificMethods {
 	@Test
-	public void runMedianLogin() {
+	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterCheckerUsername()
 		.enterCheckerPassword()

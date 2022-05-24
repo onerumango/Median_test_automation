@@ -1,22 +1,21 @@
 package testcases;
 
-
-
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLogin;
-import pages.MedianAuthRole;
 
-public class MedianAuthTC01 extends MedianSpecificMethods {
+public class MedianLogout  extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
-		login.enterMakerUsername()
+		login
+		.enterMakerUsername()
 		.enterMakerPassword()
 		.clickSignInButton()
-		.selectSystemMaintenance()
-		.selectRoleAuth()
-		.clickAuthButton();
+		.clickUserName()
+		.clickLogout();
+		
 	}
+
 }
