@@ -7,7 +7,7 @@ import pages.MedianLogin;
 
 public class UseraccountRestrictionCreateTestcases extends MedianSpecificMethods{
 	@Test
-	public void runUseraccountRestriction() {
+	public void runUseraccountRestriction() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
