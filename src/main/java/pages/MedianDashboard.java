@@ -39,7 +39,7 @@ public class MedianDashboard extends MedianSpecificMethods {
 //		return new MedianLogout();
 //	}
 	
- MedianChangePasswordAndLogout
+// MedianChangePasswordAndLogout
 	public MedianChangePassword clickUserName() throws InterruptedException {
 		Thread.sleep(4000);
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
@@ -53,8 +53,8 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 
 	
-}      
-=======
+      
+
 	public MedianAddNewExternalSystem fileUploadMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
 		wait(7000);

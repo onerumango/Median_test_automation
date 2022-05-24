@@ -7,7 +7,7 @@ import pages.MedianLogin;
 
 public class GlobalAccountTestcasesCreate extends MedianSpecificMethods{
 	@Test
-	public void runGlobalAccountTestcases() {
+	public void runGlobalAccountTestcases() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()

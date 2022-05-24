@@ -8,7 +8,7 @@ import pages.MedianAddNewExternalSystem;
 
 public class MedianNewExternalSystemTC01 extends MedianSpecificMethods {
 	@Test
-	public void runMedianLogin() {
+	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterMakerUsername()
 		.enterMakerPassword()

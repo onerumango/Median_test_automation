@@ -7,7 +7,7 @@ import pages.MedianLogin;
 
 public class DepartmentidAuthTestcases extends MedianSpecificMethods{
 	@Test
-	public void runDepartmentidAuthTestcases() {
+	public void runDepartmentidAuthTestcases() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
