@@ -26,8 +26,35 @@ public class MedianDashboard extends MedianSpecificMethods {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.EmailManagement.Xpath")));
 		return new EmailManagementSummary();
 	}
+//For Handle Toast Button	
+//	public MedianChangePassword clickToastbutton() {
+//		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.clickToastbutton.Xpath")));
+//		wait(1000);
+//        return new MedianChangePassword();
+//        }
 	
+//	public MedianLogout clickChangePassword() {
+//		clickElement(locateElement("xpath", props.getProperty("MedainDashboard.changePassword.Xpath")));
+//		wait(1000);
+//		return new MedianLogout();
+//	}
 	
+ MedianChangePasswordAndLogout
+	public MedianChangePassword clickUserName() throws InterruptedException {
+		Thread.sleep(4000);
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
+		wait(2000);
+        return new MedianChangePassword();
+	}
+	public MedianChangePassword clickLogout() {
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
+	//	wait(1000);
+        return new MedianChangePassword();
+	}
+
+	
+}      
+=======
 	public MedianAddNewExternalSystem fileUploadMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
 		wait(7000);
@@ -49,3 +76,4 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 
 }
+

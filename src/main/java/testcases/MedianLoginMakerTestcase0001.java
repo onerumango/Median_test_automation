@@ -9,8 +9,8 @@ import pages.MedianLogin;
 
 public class MedianLoginMakerTestcase0001 extends MedianSpecificMethods {
 	@Test
-	public void runMedianLogin() {
+	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton();
+		login.enterMakerUsername().enterMakerPassword().clickSignInButton().clickUserName().clickLogout();
 	}
 }

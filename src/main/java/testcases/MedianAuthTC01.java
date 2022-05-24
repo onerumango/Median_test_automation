@@ -10,7 +10,7 @@ import pages.MedianAuthRole;
 
 public class MedianAuthTC01 extends MedianSpecificMethods {
 	@Test
-	public void runMedianLogin() {
+	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterCheckerUsername()
 		.enterCheckerPassword()
