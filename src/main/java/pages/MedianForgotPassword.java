@@ -17,7 +17,7 @@ public class MedianForgotPassword extends MedianSpecificMethods{
 	 return this;
 			}
 	public MedianForgotPassword enterConfirmPassword() {
-		  enterValue(locateElement("xpath", props.getProperty("MedianForgotPassword.Confirmassword.Xpath")), props.getProperty("Confirmpassword"));
+		  enterValue(locateElement("xpath", props.getProperty("MedianForgotPassword.Confirmpassword.Xpath")), props.getProperty("Confirmpassword"));
 	 return this;
 			}
 	public MedianForgotPassword clickSave() {
