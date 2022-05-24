@@ -5,18 +5,18 @@ import org.openqa.selenium.WebElement;
 
 import base.MedianSpecificMethods;
 
-public class MedianAuthRole extends MedianSpecificMethods 
+public class MedianAuthExternalSystem extends MedianSpecificMethods 
 {
-	public MedianAuthRole selectRoleAuth() {
+	public MedianAuthExternalSystem selectExternalAuth() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
 		wait(5000);
 		return this;
 	}
 	
 	
-	public MedianAuthRole clickAuthButton() {
+	public MedianAuthExternalSystem clickAuthButton() {
 		wait(2000);
-		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Authenticate.Role.Xpath")));
+		clickElement(locateElement("xpath",props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Auth.Xpath")));
 		wait(5000);
 		Alert alert = driver.switchTo().alert();
 		alert.accept();

@@ -6,17 +6,17 @@ import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLogin;
-import pages.MedianAuthRole;
+import pages.MedianAuthExternalSystem;
 
-public class MedianAuthTC01 extends MedianSpecificMethods {
+public class MedianExternalSystemAuth extends MedianSpecificMethods {
 	@Test
-	public void runMedianLogin() throws InterruptedException {
+	public void runMedianLogin() {
 		MedianLogin login = new MedianLogin();
 		login.enterCheckerUsername()
 		.enterCheckerPassword()
 		.clickSignInButton()
-		.selectSystemMaintenance()
-		.selectRoleAuth()
+		.fileUploadMaintenance()
+		.selectExternalAuth()
 		.clickAuthButton();
 	}
 }
