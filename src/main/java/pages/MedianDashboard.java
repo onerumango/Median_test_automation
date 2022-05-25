@@ -89,6 +89,12 @@ public class MedianDashboard extends MedianSpecificMethods {
 			return this;
 		}
 	 
+	 public MedianUploadExcel selectUploadExcel() {
+			clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.Xpath")));
+			wait(7000);
+			return new MedianUploadExcel();
+		}
+	 
 	 public FileUploadSummary selectAuthorizeExcel() {
 			clickElement(locateElement("xpath", props.getProperty("Median.AuthorizeExcel.Xpath")));
 			wait(7000);
