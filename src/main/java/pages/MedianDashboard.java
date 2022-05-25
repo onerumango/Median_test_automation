@@ -55,33 +55,32 @@ public class MedianDashboard extends MedianSpecificMethods {
 	
       
 
-	public MedianAddNewExternalSystem fileUploadMaintenance() {
-	    clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
+	public MedianDashboard clickfileUploadMaintenance() {
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
 		wait(7000);
+		return this;
+	}
+		
+		public MedianExternalSystemSummary clickexternalSystem() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Xpath")));
 		wait(7000);
-		return new MedianAddNewExternalSystem();
-		}
-	public MedianDashboard clickFileUploadMaintenanceLink() {
-		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.FileUploadMaintenance.Xpath")));
-        return this;
+		return new MedianExternalSystemSummary();
 	}
-	public MedianDashboard clickProcesscodemapping() {
-		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.ProcessCodeMapping.Xpath")));
-        return this;
-	}
-	
 	
 	
 	
 	
 
-	public MedianAddNewRole selectSystemMaintenance() {
+	public MedianDashboard selectSystemMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Xpath")));
 		wait(7000);
+		return this;
+	}
+	
+	 public MedianroleSummary selectrole() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.Xpath")));
 		wait(7000);
-		return new MedianAddNewRole();
+		return new MedianroleSummary();
 	}
 
 }

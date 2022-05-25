@@ -7,11 +7,7 @@ import base.MedianSpecificMethods;
 
 public class MedianAddNewRole extends MedianSpecificMethods 
 {
-	public MedianAddNewRole selectNew() {
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.New.Xpath")));
-		wait(5000);
-		return this;
-	}
+	
 	
 	public MedianAddNewRole enterRoleName() {
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.New.RoleName.Xpath")), props.getProperty("RoleName"));

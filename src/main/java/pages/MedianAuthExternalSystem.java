@@ -7,11 +7,6 @@ import base.MedianSpecificMethods;
 
 public class MedianAuthExternalSystem extends MedianSpecificMethods 
 {
-	public MedianAuthExternalSystem selectExternalAuth() {
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
-		wait(5000);
-		return this;
-	}
 	
 	
 	public MedianAuthExternalSystem clickAuthButton() {
