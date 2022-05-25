@@ -36,7 +36,7 @@ public class MedianLogin extends MedianSpecificMethods {
 			 */
 			Thread.sleep(20000);
 			clickElement(locateElement("xpath", props.getProperty("MedianLoginPage.verify.Xpath")));
-			webDriverWait("Median -DTB Bank");
+			webDriverWait("Rumango");
 			wait(3000);
 			return new MedianDashboard();
 			

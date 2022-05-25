@@ -42,6 +42,7 @@ public class MedianDashboard extends MedianSpecificMethods {
 //	}
 	
 // MedianChangePasswordAndLogout
+
  
  
 	public MedianChangePassword clickUserName() throws InterruptedException {
@@ -98,34 +99,34 @@ public class MedianDashboard extends MedianSpecificMethods {
 	
 	
 
-	public MedianDashboard selectSystemMaintenance() throws InterruptedException {
-		wait(10000);
+	public MedianDashboard selectSystemMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Xpath")));
-		
+		wait(7000);
 		return this;
 	}
 	
 	 public MedianroleSummary selectrole() {
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.Xpath")));
+		wait(7000);
 		return new MedianroleSummary();
 	}
 
 	 public MedianDashboard selectFileUpload() {
-		 	wait(10000);
 			clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.Xpath")));
+			wait(7000);
 			return this;
 		}
 	 
-	 public FileUploadSummary selectAuthorizeExcel() {
-		 	wait(10000);
-			clickElement(locateElement("xpath", props.getProperty("Median.AuthorizeExcel.Xpath")));
-			return new FileUploadSummary();
+	 public MedianUploadExcel selectUploadExcel() {
+			clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.Xpath")));
+			wait(7000);
+			return new MedianUploadExcel();
 		}
 	 
-	 public pages.MedianRuleTranslation clickSystemInterface() {
-		    wait(10000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.Xpath")));
-			return new MedianRuleTranslation();
+	 public FileUploadSummary selectAuthorizeExcel() {
+			clickElement(locateElement("xpath", props.getProperty("Median.AuthorizeExcel.Xpath")));
+			wait(7000);
+			return new FileUploadSummary();
 		}
 }
 
