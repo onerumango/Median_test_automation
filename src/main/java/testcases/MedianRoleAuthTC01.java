@@ -8,7 +8,7 @@ import base.MedianSpecificMethods;
 import pages.MedianLogin;
 import pages.MedianAuthRole;
 
-public class MedianAuthTC01 extends MedianSpecificMethods {
+public class MedianRoleAuthTC01 extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
@@ -16,6 +16,7 @@ public class MedianAuthTC01 extends MedianSpecificMethods {
 		.enterCheckerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
+		.selectrole()
 		.selectRoleAuth()
 		.clickAuthButton();
 	}
