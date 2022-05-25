@@ -14,6 +14,8 @@ public class MedinEditRoleTC01 extends MedianSpecificMethods {
 		.enterMakerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
+		.selectrole()
+		.selectEdit()
 		.enterRoleName()
 		.enterRoleDescription()
 		.selectSystemMaintenance1()

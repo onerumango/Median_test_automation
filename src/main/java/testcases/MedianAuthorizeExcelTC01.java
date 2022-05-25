@@ -6,18 +6,18 @@ import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLogin;
-import pages.MedianAuthExternalSystem;
+import pages.MedianAuthRole;
 
-public class MedianExternalSystemAuth extends MedianSpecificMethods {
+public class MedianAuthorizeExcelTC01 extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLogin login = new MedianLogin();
 		login.enterCheckerUsername()
 		.enterCheckerPassword()
 		.clickSignInButton()
-		.clickfileUploadMaintenance()
-		.clickexternalSystem()
-		.selectExternalAuth()
-		.clickAuthButton();
+		.selectFileUpload()
+		.selectAuthorizeExcel()
+		.clickgetDetails()
+		.clickApproveandProcess();
 	}
 }
