@@ -3,8 +3,10 @@ package pages;
 import base.MedianSpecificMethods;
 
 public class MedianDashboard extends MedianSpecificMethods {
-
-	public MedianDashboard clickSystemparamMaintenanceLink() {
+	
+   
+	public MedianDashboard clickSystemparamMaintenanceLink() throws InterruptedException {
+		 Thread.sleep(15000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemParamMaintenance.Xpath")));
 		return this;
 	}
@@ -66,9 +68,9 @@ public class MedianDashboard extends MedianSpecificMethods {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.FileUploadMaintenance.Xpath")));
         return this;
 	}
-	public MedianDashboard clickProcesscodemapping() {
+	public ProcesscodeMappingSummary clickProcesscodemapping() {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.ProcessCodeMapping.Xpath")));
-        return this;
+        return new ProcesscodeMappingSummary();
 	}
 	
 	
