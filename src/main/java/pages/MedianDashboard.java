@@ -40,16 +40,24 @@ public class MedianDashboard extends MedianSpecificMethods {
 //	}
 	
 // MedianChangePasswordAndLogout
+<<<<<<< Updated upstream
 	public MedianChangePassword clickUserName() throws InterruptedException {
 		Thread.sleep(4000);
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
 		wait(2000);
+=======
+	public MedianChangePassword clickUserName() {
+		wait(7000);
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
+		wait(5000);
+>>>>>>> Stashed changes
         return new MedianChangePassword();
 	}
-	public MedianChangePassword clickLogout() {
+	public MedianLogin clickLogout() {
+		
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
-	//	wait(1000);
-        return new MedianChangePassword();
+	
+        return new MedianLogin();
 	}
 
 	
