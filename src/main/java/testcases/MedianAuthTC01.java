@@ -16,6 +16,7 @@ public class MedianAuthTC01 extends MedianSpecificMethods {
 		.enterCheckerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
+		.selectrole()
 		.selectRoleAuth()
 		.clickAuthButton();
 	}

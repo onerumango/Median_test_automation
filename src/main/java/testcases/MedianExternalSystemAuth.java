@@ -15,7 +15,8 @@ public class MedianExternalSystemAuth extends MedianSpecificMethods {
 		login.enterCheckerUsername()
 		.enterCheckerPassword()
 		.clickSignInButton()
-		.fileUploadMaintenance()
+		.clickfileUploadMaintenance()
+		.clickexternalSystem()
 		.selectExternalAuth()
 		.clickAuthButton();
 	}

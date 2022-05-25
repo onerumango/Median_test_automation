@@ -14,6 +14,8 @@ public class MedianNewRoleTC01 extends MedianSpecificMethods {
 		.enterMakerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance()
+		.selectrole()
+		.selectNew()
 		.enterRoleName()
 		.enterRoleDescription()
 		.selectSystemMaintenance1()

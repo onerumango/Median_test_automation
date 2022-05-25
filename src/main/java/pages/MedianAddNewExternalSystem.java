@@ -7,11 +7,7 @@ import base.MedianSpecificMethods;
 
 public class MedianAddNewExternalSystem extends MedianSpecificMethods 
 {
-	public MedianAddNewExternalSystem selectNew() {
-		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.New.Xpath")));
-		wait(5000);
-		return this;
-	}
+	
 	
 	public MedianAddNewExternalSystem enterExternalSystemCode() {
 		enterValue(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.New.ExternalSystemCode.Xpath")), props.getProperty("ExternalSystemCode"));

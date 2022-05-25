@@ -7,12 +7,7 @@ import base.MedianSpecificMethods;
 
 public class MedianEditRole extends MedianSpecificMethods 
 {
-	public MedianEditRole selectEdit() {
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
-		wait(5000);
-		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Edit.Xpath")));
-		return this;
-	}
+	
 	
 	public MedianEditRole enterRoleName() {
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.Edit.RoleName.Xpath")), props.getProperty("EditRoleName"));
