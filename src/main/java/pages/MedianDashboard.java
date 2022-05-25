@@ -3,8 +3,10 @@ package pages;
 import base.MedianSpecificMethods;
 
 public class MedianDashboard extends MedianSpecificMethods {
-
-	public MedianDashboard clickSystemparamMaintenanceLink() {
+	
+   
+	public MedianDashboard clickSystemparamMaintenanceLink() throws InterruptedException {
+		 Thread.sleep(15000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemParamMaintenance.Xpath")));
 		return this;
 	}
@@ -40,16 +42,31 @@ public class MedianDashboard extends MedianSpecificMethods {
 //	}
 	
 // MedianChangePasswordAndLogout
+
+ 
+ 
 	public MedianChangePassword clickUserName() throws InterruptedException {
 		Thread.sleep(4000);
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
 		wait(2000);
+
+	public MedianChangePassword clickUserName() {
+		wait(7000);
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
+		wait(5000);
+
+	public MedianChangePassword clickUserName() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.username.Xpath")));
+		
+
         return new MedianChangePassword();
 	}
-	public MedianChangePassword clickLogout() {
+	public MedianLogin clickLogout() {
+		
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
-	//	wait(1000);
-        return new MedianChangePassword();
+	
+        return new MedianLogin();
 	}
 
 	
@@ -64,7 +81,18 @@ public class MedianDashboard extends MedianSpecificMethods {
 		public MedianExternalSystemSummary clickexternalSystem() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Xpath")));
 		wait(7000);
-		return new MedianExternalSystemSummary();
+	
+   return new MedianExternalSystemSummary();
+    }
+	public MedianDashboard clickFileUploadMaintenanceLink() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.FileUploadMaintenance.Xpath")));
+        return this;
+	}
+	public ProcesscodeMappingSummary clickProcesscodemapping() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.ProcessCodeMapping.Xpath")));
+        return new ProcesscodeMappingSummary();
+   
+
 	}
 	
 	
