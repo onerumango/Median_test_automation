@@ -87,9 +87,9 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
 		return this;
 	}
-	public TemplateMappingCreate clickExit() {
+	public MedianDashboard clickExit() {
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Exit.Xpath")));
-		return this;
+		return new MedianDashboard();
 	}
 	
 	}
