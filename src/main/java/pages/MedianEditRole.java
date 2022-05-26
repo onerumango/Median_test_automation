@@ -1,8 +1,5 @@
 package pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.Alert;
-
 import base.MedianSpecificMethods;
 
 public class MedianEditRole extends MedianSpecificMethods 
