@@ -22,6 +22,8 @@ public class MedianAuthorizeExcel extends MedianSpecificMethods{
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.AuthorizeExcel.GetDetails.ApproveandProcess.Yes.Xpath")));
 		wait(7000);
+		clickElement(locateElement("xpath", props.getProperty("Median.AuthorizeExcel.GetDetails.ApproveandProcess.OK.Xpath")));
+		wait(7000);
 		return this;
 	}
 	
