@@ -92,8 +92,12 @@ public class MedianDashboard extends MedianSpecificMethods {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.ProcessCodeMapping.Xpath")));
         return new ProcesscodeMappingSummary();
    
-
+}
+	public TemplateMappingSummary clickTemplatemapping() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.Templatemapping.Xpath")));
+        return new TemplateMappingSummary();
 	}
+	
 	
 	
 	
