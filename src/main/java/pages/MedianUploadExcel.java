@@ -55,6 +55,8 @@ public class MedianUploadExcel extends MedianSpecificMethods{
 	
 	public MedianUploadExcel clickProcess() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.Process.Xpath")));
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 		return this;
 	}
 	
