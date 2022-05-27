@@ -12,5 +12,6 @@ public class MedianLoginMakerTestcase0001 extends MedianSpecificMethods {
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton().clickUserName().clickLogout();
+
 	}
 }

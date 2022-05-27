@@ -4,8 +4,6 @@ import base.MedianSpecificMethods;
 
 public class MedianLoginAndLogout extends MedianSpecificMethods {
 
-
-
 		public MedianLoginAndLogout enterMakerUsername() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("MakerUserName"));
 			return this;
@@ -54,4 +52,5 @@ public class MedianLoginAndLogout extends MedianSpecificMethods {
 			
 		}
 		
+
 }
