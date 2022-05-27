@@ -4,14 +4,14 @@ import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianForgotPassword;
-import pages.MedianLogin;
+import pages.MedianLoginAndLogout;
 
 
 public class ForgotPasswordTestcases extends MedianSpecificMethods{
 	@Test
 	
 	public void runMedianLogin() {
-		MedianLogin login = new MedianLogin();
+		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.clickForgotPassword().enterUserid()
          .clickGetOTP().enterNewPassword().enterConfirmPassword()
 		.clickSave();

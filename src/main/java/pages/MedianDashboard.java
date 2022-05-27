@@ -37,13 +37,6 @@ public class MedianDashboard extends MedianSpecificMethods {
 		return new MedianChangePassword();
 	}
 
-	public MedianLogin clickLogout() {
-
-		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
-
-		return new MedianLogin();
-	}
-
 	public MedianDashboard clickfileUploadMaintenance() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
 		wait(7000);
@@ -97,4 +90,21 @@ public class MedianDashboard extends MedianSpecificMethods {
 		wait(7000);
 		return new FileUploadSummary();
 	}
+	public MedianDashboard clickSystemInterface() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.Xpath")));
+		wait(2000);
+		return this;
+	}
+	public MedianAddSystemSummary clickAddSystem() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Xpath")));
+		wait(7000);
+		return new MedianAddSystemSummary();
+	}
+	
+	
 }
+
+
+
