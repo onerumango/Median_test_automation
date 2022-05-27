@@ -11,10 +11,7 @@ public class ProcesscodeMapping extends MedianSpecificMethods{
 		clickElement(locateElement("xpath", props.getProperty("ProcesscodeMapping.ExtSysCode.Xpath")));
 		return this;
 	}
-	public ProcesscodeMapping enterExtSysName() {
-		  enterValue(locateElement("xpath", props.getProperty("ProcesscodeMapping.ExtSysName.Xpath")), props.getProperty("ExtSysName"));
-	  		return this;
-	      }
+
 	public ProcesscodeMapping enterProcessCode() {
 		  enterValue(locateElement("xpath", props.getProperty("ProcesscodeMapping.ProcessCode.Xpath")), props.getProperty("ProcessCode"));
 	  		return this;
