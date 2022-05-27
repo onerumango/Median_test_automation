@@ -118,6 +118,11 @@ return new ProcesscodeMappingSummary();
 		return new MedianLoginAndLogout();
 
 	}
+	
+	public MedianProcessMonitoring clickProcessMonitoring() {
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.processMonitoring.Xpath")));
+		return new MedianProcessMonitoring();
+	}
 
 	
 
