@@ -3,12 +3,12 @@ package testcases;
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
-import pages.MedianLogin;
+import pages.MedianLoginAndLogout;
 
 public class TemplateMappingCreate extends MedianSpecificMethods{
 	@Test
 	public void runTemplateMappingCreate() throws InterruptedException {
-		MedianLogin login = new MedianLogin();
+		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickFileUploadMaintenanceLink().clickTemplatemapping().clickNew().clickExtsysDropdown().selectExternalSystem().clickProcesscodeDropdown()
 		.selectProcessCode().enterDatastartingRow().enterCurrency().enterSheetNumber().enterName1().clickDatatypeDropdown1()

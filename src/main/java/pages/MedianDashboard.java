@@ -4,8 +4,8 @@ import base.MedianSpecificMethods;
 
 public class MedianDashboard extends MedianSpecificMethods {
 
-	public MedianDashboard clickSystemparamMaintenanceLink() throws InterruptedException {
-		Thread.sleep(15000);
+	public MedianDashboard clickSystemparamMaintenanceLink() {
+		wait(15000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemParamMaintenance.Xpath")));
 		return this;
 	}
@@ -101,12 +101,24 @@ return new ProcesscodeMappingSummary();
 		wait(2000);
 		return this;
 	}
+	public MedianRuleTranslation clickRuleTranslation() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
+		wait(7000);
+		return new MedianRuleTranslation();
+	}
 	public MedianAddSystemSummary clickAddSystem() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Xpath")));
 		wait(7000);
 		return new MedianAddSystemSummary();
 	}
+	
+	public MedianLoginAndLogout clickLogout() {
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
+		return new MedianLoginAndLogout();
+
+	}
+
 	
 
 }
