@@ -22,6 +22,8 @@ public class MedianUploadExcel extends MedianSpecificMethods{
 	public MedianUploadExcel selectTransactionCode() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.TransactionCode.Dropdown.Xpath")));
 		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.TransactionCode.Dropdown.Option.Xpath")));
+		wait(1000);
 		return this;
 	}
 	
