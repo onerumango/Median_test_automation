@@ -3,13 +3,13 @@ package testcases;
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
-import pages.MedianLogin;
+import pages.MedianLoginAndLogout;
 import pages.MedianAddNewExternalSystem;
 
 public class MedianNewExternalSystemTC01 extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
-		MedianLogin login = new MedianLogin();
+		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername()
 		.enterMakerPassword()
 		.clickSignInButton()

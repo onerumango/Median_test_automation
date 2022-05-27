@@ -3,12 +3,12 @@ package testcases;
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
-import pages.MedianLogin;
+import pages.MedianLoginAndLogout;
 
 public class MedianChangePasswordTestCase extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException {
-		MedianLogin login = new MedianLogin();
+		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login
 		.enterMakerUsername()
 		.enterMakerPassword()

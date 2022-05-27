@@ -2,28 +2,28 @@ package pages;
 
 import base.MedianSpecificMethods;
 
-public class MedianLogin extends MedianSpecificMethods {
+public class MedianLoginAndLogout extends MedianSpecificMethods {
 
 
 
-		public MedianLogin enterMakerUsername() {
+		public MedianLoginAndLogout enterMakerUsername() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("MakerUserName"));
 			return this;
 		}
 		
-		public MedianLogin enterMakerPassword() {
+		public MedianLoginAndLogout enterMakerPassword() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("MakerPassword"));
 			return this;
 		}
 		
 		
 		
-		public MedianLogin enterCheckerUsername() {
+		public MedianLoginAndLogout enterCheckerUsername() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.userid.Xpath")), props.getProperty("CheckerUserName"));
 			return this;
 		}
 		
-		public MedianLogin enterCheckerPassword() {
+		public MedianLoginAndLogout enterCheckerPassword() {
 			enterValue(locateElement("xpath", props.getProperty("MedianLoginPage.Password.Xpath")), props.getProperty("CheckerPassword"));
 			return this;
 		}
@@ -44,6 +44,14 @@ public class MedianLogin extends MedianSpecificMethods {
 		public MedianForgotPassword clickForgotPassword() {
 			clickElement(locateElement("xpath", props.getProperty("MedianLogin.Forgotpassword.Xpath")));
 			return new MedianForgotPassword();
+		}
+		
+		public MedianLoginAndLogout clickLogout() {
+			
+			clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
+			
+	        return this;
+			
 		}
 		
 }
