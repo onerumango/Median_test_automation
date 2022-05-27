@@ -1,5 +1,6 @@
 package testcases;
-import org.openqa.selenium.By;  
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.*;  
 import org.openqa.selenium.JavascriptExecutor;  
 import org.openqa.selenium.WebDriver;  
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,8 +33,13 @@ public class TestCode {
        Thread.sleep(15000);
        driver.findElement(By.xpath("//button[normalize-space()='Verify']")).click();
        Thread.sleep(15000);
-       driver.findElement(By.xpath("//span[normalize-space()='System Maintenance']")).click();
-       
+       driver.findElement(By.xpath("//span[normalize-space()='File upload']")).click();
+       driver.findElement(By.xpath("//a[normalize-space()='Treasury Reference']")).click();
+       Select se = new Select(driver.findElement(By.xpath("//select[@aria-label='Default select example']")));
+       int n=1;
+       se.selectByIndex(n);
+       System.out.println(se);
+    		   
 
 	}
 

@@ -1,4 +1,5 @@
 package base;
+
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,36 +28,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 @SuppressWarnings("unused")
 public class MedianGenericWrapper {
-	
+
 	public static RemoteWebDriver driver;
 	public static String firstWindow, secondWindow;
 
 	public void lanuchBrowser(String browser, String url) {
 
 		try {
-			
-			
+
 			System.setProperty("webdriver.chrome.driver", ".//drivers/chromedriver1.exe");
-			  
+
 			/*
 			 * HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 			 * chromePrefs.put("profile.default_content_settings.popups", 1); // 0,1,2
-			 */			
-			  ChromeOptions options = new ChromeOptions();
-			  options.addArguments(
-					   "--disable-web-security",
-					   "--ignore-certificate-errors",
-					   "--allow-running-insecure-content",
-					   "--allow-insecure-localhost",
-					   "--disable-gpu"
-					  );
-			 
-			  //options.setExperimentalOption("prefs", chromePrefs);
-			  options.addArguments("user-data-dir=C:/User/Admin/AppData/Local/Google/Chrome/User Data");
-			  
-			  driver = new ChromeDriver(options);
-			  
-			 
+			 */
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-web-security", "--ignore-certificate-errors",
+					"--allow-running-insecure-content", "--allow-insecure-localhost", "--disable-gpu");
+
+			// options.setExperimentalOption("prefs", chromePrefs);
+			options.addArguments("user-data-dir=C:/User/Admin/AppData/Local/Google/Chrome/User Data");
+
+			driver = new ChromeDriver(options);
+
 			/*
 			 * WebDriverManager.firefoxdriver().setup(); driver = new FirefoxDriver();
 			 */
@@ -69,8 +64,6 @@ public class MedianGenericWrapper {
 			System.out.println(e);
 		}
 	}
-	
-
 
 	public WebElement locateElement(String locator, String locatorValue) {
 		switch (locator) {
@@ -143,20 +136,19 @@ public class MedianGenericWrapper {
 			System.out.println(e);
 		}
 	}
-	
-	public void windowsHandling()
-	{
+
+	public void windowsHandling() {
 		firstWindow = driver.getWindowHandle();
 		System.out.println(firstWindow);
 		System.out.println("***************************************");
 		Set<String> windowHandles = driver.getWindowHandles(); // copy the data from set to list
 		List<String> listHandles = new ArrayList<String>(windowHandles);
-	 secondWindow = listHandles.get(1);
-		//to switch from first to second window
+		secondWindow = listHandles.get(1);
+		// to switch from first to second window
 		driver.switchTo().window(secondWindow);
 		System.out.println(secondWindow);
 	}
-	
+
 	public static void setClipBoard(String file) {
 		StringSelection obj = new StringSelection(file);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(obj, null);
@@ -172,20 +164,27 @@ public class MedianGenericWrapper {
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 	}
-	
+
 	public String str;
+
 	public String readValue(WebElement ele) {
 		try {
-			 str= ele.getText();
+			str = ele.getText();
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		return str;
 	}
-public void alertHandling() {
-	driver.switchTo().alert().dismiss();
-	driver.switchTo().alert().accept();
-	driver.switchTo().alert().getText();
-	driver.switchTo().alert().sendKeys("Text");
-}
+
+	public void alertHandling() {
+		driver.switchTo().alert().dismiss();
+		driver.switchTo().alert().accept();
+		driver.switchTo().alert().getText();
+		driver.switchTo().alert().sendKeys("Text");
+	}
+	
+	public void selectByIndex(WebElement ele, int n) {
+		Select Se=new Select(ele);
+		Se.selectByIndex(n);
+	}
 }

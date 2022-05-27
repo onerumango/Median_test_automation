@@ -124,6 +124,10 @@ return new ProcesscodeMappingSummary();
 		return new MedianProcessMonitoring();
 	}
 
+	public MedianTreasuryReference clickTreasuryReference() {
+		clickElement(locateElement("xpath", props.getProperty("Median.TreasuryReference.xpath")));
+		return new MedianTreasuryReference();
+	}
 	
 
 }
