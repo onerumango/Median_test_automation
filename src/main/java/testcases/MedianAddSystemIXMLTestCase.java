@@ -1,20 +1,23 @@
 package testcases;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 
-public class MedianAddSystemISOTestCase extends MedianSpecificMethods{
+public class MedianAddSystemIXMLTestCase extends MedianSpecificMethods{
+
 	@Test
-	public void runMedianLogin() throws InterruptedException {
+	public void runMedianLogin() throws InterruptedException, AWTException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername()
 		.enterMakerPassword()
 		.clickSignInButton()
 		.clickSystemInterface()
 		.clickAddSystem()
-		.clickNewAddISOSystem()
+		.clickNewAddXMLSystem()
 		.enterCode()
 		.enterName()
 		.selectType()
@@ -29,19 +32,17 @@ public class MedianAddSystemISOTestCase extends MedianSpecificMethods{
 		.selectMessageProtocol()
 		.selectDataType()
 		.clickNextMessageConfiguration()
+		.uploadXMLFile()
+		.clickOKButtonXMLFile()
 		.selectHeader1()
-		.selectFieldNo1()
+		.selectTag1()
 		.selectDataType1()
-		.enterDefaultValue1()
 		.clickPlusButton()
 		.selectHeader2()
-		.selectFieldNo2()
+		.selectTag2()
 		.selectDataType2()
-		.enterDefaultValue2()
 		.clickSaveServiceAndHeader()
-		.clickOKServiceAndHeader()
-
-		
-		;
+		.clickOKServiceAndHeader();
 }
+
 }
