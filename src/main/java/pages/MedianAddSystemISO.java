@@ -37,6 +37,11 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.ExternalPort.Xpath")), props.getProperty("AddSystem.SystemInformation.ExternalPort"));
 		return this;
 	}
+	public MedianAddSystemISO enterExternalURI() {
+		wait(2000);
+		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.ExternalURI.Xpath")), props.getProperty("AddSystem.SystemInformation.ExternalURI"));
+		return this;
+	}
 	public MedianAddSystemISO enterMedianIP() {
 		wait(2000);
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.MedianIP.Xpath")), props.getProperty("AddSystem.SystemInformation.MedianIP"));
@@ -44,7 +49,7 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 	}
 	public MedianAddSystemISO enterMedianPort() {
 		wait(2000);
-		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.ExternalPort.Xpath")), props.getProperty("AddSystem.SystemInformation.MedianPort"));
+		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.MedianPort.Xpath")), props.getProperty("AddSystem.SystemInformation.MedianPort"));
 		return this;
 	}
 	public MedianAddSystemISO enterMedianURI() {
@@ -52,11 +57,7 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.MedianURI.Xpath")), props.getProperty("AddSystem.SystemInformation.MedianURI"));
 		return this;
 	}
-	public MedianAddSystemISO enterExternalURI() {
-		wait(2000);
-		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.ExternalURI.Xpath")), props.getProperty("AddSystem.SystemInformation.ExternalURI"));
-		return this;
-	}
+	
 	public MedianAddSystemISO clickNextSystemInformation() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.Next.Xpath")));
@@ -91,6 +92,12 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.ISOFieldNo1Select.Xpath")));
 	  	  return this;
 	}
+	public MedianAddSystemISO selectDataType1() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.DataType1.Xpath")));
+	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.SelectDataType1.Xpath")));
+	  	  return this;
+	}
 	public MedianAddSystemISO enterDefaultValue1() {
 		wait(2000);
 		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.ISODefaultValue1.Xpath")), props.getProperty("AddSystem.Header&ServiceDetails.ISODefaultValue1"));
@@ -113,9 +120,15 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.ISOFieldNo2Select.Xpath")));
 	  	  return this;
 	}
+	public MedianAddSystemISO selectDataType2() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.DataType2.Xpath")));
+	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.SelectDataType2.Xpath")));
+	  	  return this;
+	}
 	public MedianAddSystemISO enterDefaultValue2() {
 		wait(2000);
-		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.ISODefaultValue2.Xpath=")), props.getProperty("AddSystem.Header&ServiceDetails.ISODefaultValue2"));
+		enterValue(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.ISODefaultValue2.Xpath")), props.getProperty("AddSystem.Header&ServiceDetails.ISODefaultValue2"));
 		return this;
 	}
 	public MedianAddSystemISO clickSaveServiceAndHeader() {
@@ -126,6 +139,7 @@ public class MedianAddSystemISO extends MedianSpecificMethods{
 	public MedianAddSystemISO clickOKServiceAndHeader() {
 		wait(2000);
 	  	clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.OK.Xpath")));
-	  	 return this;
+	  	wait(5000);
+	  	return this;
 	    }
 	}
