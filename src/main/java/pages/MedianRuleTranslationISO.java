@@ -2,36 +2,36 @@ package pages;
 
 import base.MedianSpecificMethods;
 
-public class MedianRuleTranslation extends MedianSpecificMethods {
+public class MedianRuleTranslationISO extends MedianSpecificMethods {
 	
 	
 
-	public MedianRuleTranslation clickNewButton() {
+	public MedianRuleTranslationISO clickNewButton() {
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.NewButton.Xpath")));
 		return this;
 	}
 	
-	public MedianRuleTranslation dropDownSourceSyetem() {
+	public MedianRuleTranslationISO dropDownSourceSyetem() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")));
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.AutomationCodeISO")));
 		return this;
 	}
 	
-	public MedianRuleTranslation clickFetchButton() {
+	public MedianRuleTranslationISO clickFetchButton() {
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.fetch.xpath")));
 		wait(7000);
 		return this;
 	}
 	
-	public MedianRuleTranslation clickSaveButton() {
+	public MedianRuleTranslationISO clickSaveButton() {
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.NewButton.Xpath")));
 		return this;
 	}
-	public MedianRuleTranslation clickOkPopup() {
+	public MedianRuleTranslationISO clickOkPopup() {
 		wait(7000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.ok.xpath")));
 		return this;
