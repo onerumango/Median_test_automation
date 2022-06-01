@@ -101,10 +101,10 @@ return new ProcesscodeMappingSummary();
 		wait(2000);
 		return this;
 	}
-	public MedianRuleTranslation clickRuleTranslation() {
+	public MedianRuleTranslationISO clickRuleTranslation() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
 		wait(7000);
-		return new MedianRuleTranslation();
+		return new MedianRuleTranslationISO();
 	}
 	public MedianAddSystemSummary clickAddSystem() {
 		wait(2000);
@@ -119,6 +119,12 @@ return new ProcesscodeMappingSummary();
 
 	}
 	
+	public MedianRuleTranslationXML clickRuleTranslationXML() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
+		wait(7000);
+		return new MedianRuleTranslationXML();
+	}
+	
 	public MedianProcessMonitoring clickProcessMonitoring() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.processMonitoring.Xpath")));
 		return new MedianProcessMonitoring();
@@ -128,6 +134,13 @@ return new ProcesscodeMappingSummary();
 		clickElement(locateElement("xpath", props.getProperty("Median.TreasuryReference.xpath")));
 		return new MedianTreasuryReference();
 	}
+	public MedianRuleTranslationISO clickRuleTranslationISO() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
+		wait(7000);
+		return new MedianRuleTranslationISO();
+	}
+	
+	
 	
 
 }
