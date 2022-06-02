@@ -13,10 +13,17 @@ public class MedianAddSystemSummary extends MedianSpecificMethods{
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Summary.New.Xpath")));
 		return new MedianAddSystemXML();
 	}
+
 	
 	public MedianAddSystemDB clickNewAddDB() {
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Summary.New.Xpath")));
 		return new MedianAddSystemDB();
+  }
+  
+	public MedianAddSystemJSON clickNewAddJSONSystem() {
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Summary.New.Xpath")));
+		return new MedianAddSystemJSON();
+
 	}
 	
 	public MedianEditAddSystemDB clickID() {
