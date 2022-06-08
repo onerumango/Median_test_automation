@@ -9,7 +9,9 @@ public class GlobalaccountEditTestcases extends MedianSpecificMethods{
 	@Test
 	public void runGlobalaccountEdit() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
+		login.enterMakerUsername()
+		.enterMakerPassword()
+		.clickSignInButton()
 		.clickSystemparamMaintenanceLink()
 		.clickGlobalAccountRestriction()
 		.clickFirstRecord()
