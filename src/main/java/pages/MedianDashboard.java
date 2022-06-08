@@ -186,6 +186,33 @@ return new ProcesscodeMappingSummary();
 			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Auditlogs.Xpath")));
 	return new Auditlogs();
 }
+	 public CreateTransactioncodeMaintenance selectTransactioMaintenance() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
+	return new CreateTransactioncodeMaintenance();
+	}
+	 
+	 public EditTransactionCodeMaintenance selectEditTransactioMaintenance() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
+	return new EditTransactionCodeMaintenance();
+	}
+	 
+	 public AuthTransactionCodeMaintenance selectAuthTransactioMaintenance() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
+	return new AuthTransactionCodeMaintenance();
+	}
+	 
 	 
 }
 
