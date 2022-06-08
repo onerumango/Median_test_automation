@@ -114,6 +114,7 @@ return new ProcesscodeMappingSummary();
 	}
 	
 	public MedianLoginAndLogout clickLogout() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.Logout.Xpath")));
 		return new MedianLoginAndLogout();
 
