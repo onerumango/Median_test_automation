@@ -73,6 +73,7 @@ public class MedianAddNewRole extends MedianSpecificMethods
 	
 	public MedianAddNewRole clickSaveButton() {
 		wait(2000);
+		jsExecutor(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Save1.Xpath")));
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Save1.Xpath")));
 		wait(5000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.OK.Xpath")));
