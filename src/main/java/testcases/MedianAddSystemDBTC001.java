@@ -2,9 +2,10 @@ package testcases;
 
 import org.testng.annotations.Test;
 
+import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 
-public class MedianAddSystemDBConnectionTC0007 {
+public class MedianAddSystemDBTC001 extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
@@ -13,7 +14,7 @@ public class MedianAddSystemDBConnectionTC0007 {
 		.clickSignInButton()
 		.clickSystemInterface()
 		.clickAddSystem()
-		.clickNewAddISOSystem()
+		.clickNewAddDB()
 		.enterCode()
 		.enterName()
 		.selectType()
@@ -26,20 +27,18 @@ public class MedianAddSystemDBConnectionTC0007 {
 		.enterMedianURI()
 		.clickNextSystemInformation()
 		.selectMessageProtocol()
-		.selectDataType()
+		.enterDBUserName()
+		.enterDBPassword()
+		.enterDBName()
+		.enterDBConnectingString()
 		.clickNextMessageConfiguration()
+		.selectTable()
 		.selectHeader1()
-		.selectFieldNo1()
-		.selectDataType1()
-		.enterDefaultValue1()
+		.selectColumnName1()
 		.clickPlusButton()
 		.selectHeader2()
-		.selectFieldNo2()
-		.selectDataType2()
-		.enterDefaultValue2()
-		.clickSaveServiceAndHeader()
-		.clickOKServiceAndHeader()
-		;
-
-	}
+		.selectColumnName2()
+		.clickSave()
+		.clickOK();
+}
 }
