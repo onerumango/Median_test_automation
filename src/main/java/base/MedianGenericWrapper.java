@@ -36,7 +36,7 @@ public class MedianGenericWrapper {
 
 		try {
 
-			System.setProperty("webdriver.chrome.driver", ".//drivers/chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", ".//drivers/chromedriver.exe");
 
 			/*
 			 * HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
