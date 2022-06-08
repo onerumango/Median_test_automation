@@ -139,10 +139,53 @@ return new ProcesscodeMappingSummary();
 		wait(7000);
 		return new MedianRuleTranslationISO();
 	}
-	
-	
-	
 
+	 public UserCreate selectSystemMaintenance1() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.New.Xpath")));
+	return new UserCreate();
+}
+
+	 public UserAuth selectSystemMaintenance11() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.AuthName.Xpath")));
+	return new UserAuth();
+	 }	
+
+	 public UserEdit selectEditMaintenance() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.Xpath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.Editname.Xpath")));
+	return new UserEdit();
+}
+	 
+	 public Securitypolicyauth selectAuthSecuritypolicy() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.SecuritypolicyAuth.Xpath")));
+	return new Securitypolicyauth();
+}
+	 public Securitypolicyedit selectEditSecuritypolicy() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.SecuritypolicyAuth.Xpath")));
+	return new Securitypolicyedit();
+}
+	 public Auditlogs selectAuditlogs() {
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+			wait(7000);
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Auditlogs.Xpath")));
+	return new Auditlogs();
+}
+	 
 }
 
 
