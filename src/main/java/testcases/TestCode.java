@@ -1,4 +1,6 @@
 package testcases;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.*;  
 import org.openqa.selenium.JavascriptExecutor;  
@@ -27,18 +29,26 @@ public class TestCode {
       // Click on the Search button  
 //     driver.findElement(By.linkText("Core Java")).click();     
 		
-       driver.findElement(By.xpath("//input[@id='exampleInputEmail1']")).sendKeys("QAZ");
-       driver.findElement(By.xpath("//input[@id='pwdFld']")).sendKeys("Test@1234");
+       driver.findElement(By.xpath("//input[@id='exampleInputEmail1']")).sendKeys("FEB15");
+       driver.findElement(By.xpath("//input[@id='pwdFld']")).sendKeys("Test@1235");
        driver.findElement(By.xpath("//body//app-root//div[3]")).click();
        Thread.sleep(15000);
        driver.findElement(By.xpath("//button[normalize-space()='Verify']")).click();
        Thread.sleep(15000);
-       driver.findElement(By.xpath("//span[normalize-space()='File upload']")).click();
-       driver.findElement(By.xpath("//a[normalize-space()='Treasury Reference']")).click();
-       Select se = new Select(driver.findElement(By.xpath("//select[@aria-label='Default select example']")));
-       int n=1;
-       se.selectByIndex(n);
-       System.out.println(se);
+       driver.findElement(By.xpath("//span[normalize-space()='System Maintenance']")).click();
+       driver.findElement(By.xpath("//a[normalize-space()='Roles']")).click();
+       
+       List  col = driver.findElements(By.xpath("//table[@ng-reflect-dt-options='[object Object]']"));
+       System.out.println("No of cols are : " +col.size()); 
+      
+       
+       
+       
+      // driver.findElement(By.xpath("(//tbody/tr/td/a)[1]")).click();
+//       Select se = new Select(driver.findElement(By.xpath("//select[@aria-label='Default select example']")));
+//       int n=1;
+//       se.selectByIndex(n);
+//       System.out.println(se);
     		   
 
 	}
