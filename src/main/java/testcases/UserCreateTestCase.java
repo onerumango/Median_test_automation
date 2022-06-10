@@ -6,7 +6,7 @@ import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 import pages.MedianAddNewRole;
 
-public class UserCreate extends MedianSpecificMethods {
+public class UserCreateTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
