@@ -16,15 +16,6 @@ public class MedinEditRoleTC01 extends MedianSpecificMethods {
 		.selectSystemMaintenance()
 		.selectrole()
 		.selectEdit()
-		.enterRoleName()
-		.enterRoleDescription()
-		.selectSystemMaintenance1()
-		.selectSystemParamMaintenance()
-		.selectSystemInterface()
-		.selectFileUploadMaintenance()
-		.selectFileupload()
-		.selectAccountBlock()
-		.selectAccountClosure()
 		.clickSaveButton();
 		
 	}
