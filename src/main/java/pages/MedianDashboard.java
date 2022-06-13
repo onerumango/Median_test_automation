@@ -181,9 +181,11 @@ return new ProcesscodeMappingSummary();
 	return new Securitypolicyedit();
 }
 	 public Auditlogs selectAuditlogs() {
+		 wait(7000);
 		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
-			wait(7000);
+			wait(3000);
 			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Auditlogs.Xpath")));
+			wait(5000);
 	return new Auditlogs();
 }
 	 public CreateTransactioncodeMaintenance selectTransactioMaintenance() {
