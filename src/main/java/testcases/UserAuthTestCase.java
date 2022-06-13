@@ -6,12 +6,12 @@ import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 import pages.MedianAddNewRole;
 
-public class UserAuth extends MedianSpecificMethods {
+public class UserAuthTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername()
-		.enterMakerPassword()
+		login.enterCheckerUsername()
+		.enterCheckerPassword()
 		.clickSignInButton()
 		.selectSystemMaintenance11()
 		.clickAuth()

@@ -6,7 +6,7 @@ import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 import pages.MedianAddNewRole;
 
-public class UserEdit extends MedianSpecificMethods {
+public class UserEditTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
@@ -15,7 +15,6 @@ public class UserEdit extends MedianSpecificMethods {
 		.clickSignInButton()
 		.selectEditMaintenance()
 		.clickEdit()
-		.enterUserName()
 		.clickSave()
 		.clickOk();
 }

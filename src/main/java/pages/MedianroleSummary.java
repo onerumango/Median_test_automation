@@ -15,6 +15,8 @@ public class MedianroleSummary extends MedianSpecificMethods{
 		wait(5000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Xpath")));
 		wait(5000);
+		jsExecutor(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Edit.Xpath")));
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.RoleName.Edit.Xpath")));
 		return new MedianEditRole();
 	}
