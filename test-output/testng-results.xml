@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-13T12:49:31 IST" name="Default suite" finished-at="2022-06-13T12:50:31 IST" duration-ms="59936">
+  <suite started-at="2022-06-13T14:28:15 IST" name="Default suite" finished-at="2022-06-13T14:29:15 IST" duration-ms="60273">
     <groups>
     </groups>
-    <test started-at="2022-06-13T12:49:31 IST" name="Default test" finished-at="2022-06-13T12:50:31 IST" duration-ms="59936">
-      <class name="testcases.UserAuthTestCase">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.UserAuthTestCase@1ed4ae0f]" started-at="2022-06-13T12:49:31 IST" name="launchApplication" finished-at="2022-06-13T12:49:41 IST" duration-ms="9750" status="PASS">
+    <test started-at="2022-06-13T14:28:15 IST" name="Default test" finished-at="2022-06-13T14:29:15 IST" duration-ms="60273">
+      <class name="testcases.Auditlogs">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.Auditlogs@1ed4ae0f]" started-at="2022-06-13T14:28:15 IST" name="launchApplication" finished-at="2022-06-13T14:28:27 IST" duration-ms="11676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runMedianLogin()[pri:0, instance:testcases.UserAuthTestCase@1ed4ae0f]" started-at="2022-06-13T12:49:41 IST" name="runMedianLogin" finished-at="2022-06-13T12:50:31 IST" duration-ms="49840" status="PASS">
+        <test-method signature="runMedianLogin()[pri:0, instance:testcases.Auditlogs@1ed4ae0f]" started-at="2022-06-13T14:28:27 IST" name="runMedianLogin" finished-at="2022-06-13T14:29:15 IST" duration-ms="48246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runMedianLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.UserAuthTestCase@1ed4ae0f]" started-at="2022-06-13T12:50:31 IST" name="closeBrowser" finished-at="2022-06-13T12:50:31 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.Auditlogs@1ed4ae0f]" started-at="2022-06-13T14:29:15 IST" name="closeBrowser" finished-at="2022-06-13T14:29:15 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.UserAuthTestCase -->
+      </class> <!-- testcases.Auditlogs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
