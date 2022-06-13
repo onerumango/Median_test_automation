@@ -15,8 +15,9 @@ public class MedianAuthRole extends MedianSpecificMethods
 		wait(2000);
 		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Authenticate.Role.Xpath")));
 		wait(5000);
-		Alert alert = driver.switchTo().alert();
-		alert.accept();
+		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Authenticate.Role.YES.Xpath")));
+		wait(3000);
+		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Authenticate.Role.OK.Xpath")));
 		return this;
 	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.MedianRoleAuthTC01">
+      <class name="testcases.UserAuthTestCase">
         <methods>
           <include name="closeBrowser"/>
-          <include name="runMedianLogin"/>
           <include name="launchApplication"/>
+          <include name="runMedianLogin"/>
         </methods>
-      </class> <!-- testcases.MedianRoleAuthTC01 -->
+      </class> <!-- testcases.UserAuthTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
