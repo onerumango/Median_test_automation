@@ -14,9 +14,13 @@ public class EditTransactionCodeMaintenance extends MedianSpecificMethods {
 		.enterMakerPassword()
 		.clickSignInButton()
 		.selectEditTransactioMaintenance()
-		.clickVersion()
+		.clickUserID()
 		.clickEdit()
-		.entertrncode()
+				/*
+				 * .clearTrnCode() .reEntertrncode()
+				 */
+		.clearTrnDesc()
+		.reEntertrnDesc()
 		.clickSave()
 		.clickOk();
 	}
