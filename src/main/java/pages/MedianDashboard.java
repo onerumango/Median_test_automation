@@ -169,15 +169,16 @@ return new ProcesscodeMappingSummary();
 }
 	 
 	 public Securitypolicyauth selectAuthSecuritypolicy() {
+		 wait(2000);
 		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.SecuritypolicyAuth.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Securitypolicy.Xpath")));
 	return new Securitypolicyauth();
 }
 	 public Securitypolicyedit selectEditSecuritypolicy() {
 		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.SecuritypolicyAuth.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Securitypolicy.Xpath")));
 	return new Securitypolicyedit();
 }
 	 public Auditlogs selectAuditlogs() {

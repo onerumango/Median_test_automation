@@ -6,14 +6,17 @@ import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 import pages.MedianAddNewRole;
 
-public class Auditlogs extends MedianSpecificMethods {
+public class SecurityPolicyAuthTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername()
-		.enterMakerPassword()
+		login.enterCheckerUsername()
+		.enterCheckerPassword()
 		.clickSignInButton()
-		.selectAuditlogs()
-		.selectform();
-	}
+		.selectAuthSecuritypolicy()
+		.clickVersion()
+		.clickAuth()
+		.clicksave()
+		.clickOk();
+}
 }
