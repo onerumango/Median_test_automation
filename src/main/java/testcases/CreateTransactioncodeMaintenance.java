@@ -14,7 +14,7 @@ public class CreateTransactioncodeMaintenance extends MedianSpecificMethods {
 		.enterMakerPassword()
 		.clickSignInButton()
 		.selectTransactioMaintenance()
-		.selectDefault()
+		.selectUserID()
 		.entertrncode()
 		.entertrndesc()
 		.clickSave()

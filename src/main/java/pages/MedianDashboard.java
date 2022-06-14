@@ -190,29 +190,28 @@ return new ProcesscodeMappingSummary();
 	return new Auditlogs();
 }
 	 public CreateTransactioncodeMaintenance selectTransactioMaintenance() {
-		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+		 wait(5000);
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.Xpath")));
 			wait(5000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
 	return new CreateTransactioncodeMaintenance();
 	}
 	 
 	 public EditTransactionCodeMaintenance selectEditTransactioMaintenance() {
-		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
-			wait(5000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
-	return new EditTransactionCodeMaintenance();
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.EditTransactionCodeMaintenance.Xpath")));
+			return new EditTransactionCodeMaintenance();
 	}
 	 
 	 public AuthTransactionCodeMaintenance selectAuthTransactioMaintenance() {
-		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));
+		 clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.Xpath")));
 			wait(5000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
 	return new AuthTransactionCodeMaintenance();
 	}
 	 
