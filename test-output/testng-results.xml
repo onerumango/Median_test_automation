@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-15T14:03:38 IST" name="Default suite" finished-at="2022-06-15T14:04:27 IST" duration-ms="49165">
+  <suite started-at="2022-06-15T17:52:01 IST" name="Default suite" finished-at="2022-06-15T17:53:07 IST" duration-ms="66263">
     <groups>
     </groups>
-    <test started-at="2022-06-15T14:03:38 IST" name="Default test" finished-at="2022-06-15T14:04:27 IST" duration-ms="49165">
-      <class name="testcases.DepartmentidAuthTestcases">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.DepartmentidAuthTestcases@1ed4ae0f]" started-at="2022-06-15T14:03:38 IST" name="launchApplication" finished-at="2022-06-15T14:03:47 IST" duration-ms="9043" status="PASS">
+    <test started-at="2022-06-15T17:52:01 IST" name="Default test" finished-at="2022-06-15T17:53:07 IST" duration-ms="66263">
+      <class name="testcases.EmailManagementCreate">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:52:01 IST" name="launchApplication" finished-at="2022-06-15T17:52:11 IST" duration-ms="10021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runDepartmentidAuthTestcases()[pri:0, instance:testcases.DepartmentidAuthTestcases@1ed4ae0f]" started-at="2022-06-15T14:03:47 IST" name="runDepartmentidAuthTestcases" finished-at="2022-06-15T14:04:27 IST" duration-ms="39889" status="PASS">
+        <test-method signature="runDepartmentidCreate()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:52:11 IST" name="runDepartmentidCreate" finished-at="2022-06-15T17:53:06 IST" duration-ms="55866" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runDepartmentidAuthTestcases -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.DepartmentidAuthTestcases@1ed4ae0f]" started-at="2022-06-15T14:04:27 IST" name="closeBrowser" finished-at="2022-06-15T14:04:27 IST" duration-ms="178" status="PASS">
+        </test-method> <!-- runDepartmentidCreate -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:53:06 IST" name="closeBrowser" finished-at="2022-06-15T17:53:07 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.DepartmentidAuthTestcases -->
+      </class> <!-- testcases.EmailManagementCreate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
