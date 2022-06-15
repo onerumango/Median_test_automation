@@ -12,8 +12,8 @@ public class DepartmentidEditTestcases extends MedianSpecificMethods{
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
 		.clickDeptidscreen()
-		.clickFirstrecord()
-		.clickEdit() .editDeptid().clickSubmit();
+		.clickDepartmentID()
+		.clickEdit().clearDeptName() .editDeptName().clickSave().clickOK();
 	}
 		
 		
