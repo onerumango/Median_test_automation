@@ -48,7 +48,7 @@ public class EditTransactionCodeMaintenance extends MedianSpecificMethods{
       }
       public EditTransactionCodeMaintenance clickOk() {
     	  wait(2000);
-    	  clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.EditTransactionCodeMaintenance.OK.Xpath")));
+    	  clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.EditTransactionCodeMaintenance.OK.Xpath")));
     	  return this;
       }
       

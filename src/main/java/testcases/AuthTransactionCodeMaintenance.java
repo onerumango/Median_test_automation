@@ -10,11 +10,11 @@ public class AuthTransactionCodeMaintenance extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername()
-		.enterMakerPassword()
+		login.enterCheckerUsername()
+		.enterCheckerPassword()
 		.clickSignInButton()
 		.selectAuthTransactioMaintenance()
-		.clickVersion()
+		.SelectUserID()
 		.clickAuth()
 		.clickSave()
 		.clickOk();
