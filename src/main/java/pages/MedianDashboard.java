@@ -209,10 +209,8 @@ return new ProcesscodeMappingSummary();
 	 public AuthTransactionCodeMaintenance selectAuthTransactioMaintenance() {
 		 clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.Xpath")));
 			wait(7000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.Xpath")));
-			wait(5000);
-			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.CreateTransactioncodeMaintenance.New.Xpath")));
-	return new AuthTransactionCodeMaintenance();
+			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.AuthTransactioncodeMaintenance.Xpath")));
+			return new AuthTransactionCodeMaintenance();
 	}
 	 
 	 
