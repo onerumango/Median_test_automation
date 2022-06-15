@@ -5,12 +5,13 @@ import base.MedianSpecificMethods;
 public class MedianDashboard extends MedianSpecificMethods {
 
 	public MedianDashboard clickSystemparamMaintenanceLink() {
-		wait(15000);
+		wait(8000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemParamMaintenance.Xpath")));
 		return this;
 	}
 
 	public DepartmentIdMaintenanceSummary clickDeptidscreen() {
+		wait(4000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.DepartmentIdScreen.Xpath")));
 		return new DepartmentIdMaintenanceSummary();
 	}

@@ -11,7 +11,7 @@ public class DepartmentidAuthTestcases extends MedianSpecificMethods{
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
-		.clickDeptidscreen().clickUnauthrecord().clickAuth();
+		.clickDeptidscreen().clickDepartmentIDAuth().clickAuth().clickYES();
 	}
 
 }

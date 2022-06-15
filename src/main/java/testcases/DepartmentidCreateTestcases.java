@@ -12,13 +12,13 @@ public class DepartmentidCreateTestcases extends MedianSpecificMethods{
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink()
 		.clickDeptidscreen()
-		
 	     .clickNew()
 	     .enterDeptId()
 	     .enterDeptName()
 	     .enterBatchNofrom()
 	     .enterBatchNoto()
-	     .clickDeptSubmit();
+	     .clickSave()
+	     .clickOK();
 		
 	}
 
