@@ -11,7 +11,11 @@ public class EmailManagementCreate extends MedianSpecificMethods{
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink().clickEmailManagement().clickNew().clickDropdown()
-		.selectOption().enterEmailid().clickSave();
+		.selectOption()
+		.enterEmailid()
+		.clickSave()
+		.clickOK() 
+		;
 	}
 
 }
