@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-15T17:52:01 IST" name="Default suite" finished-at="2022-06-15T17:53:07 IST" duration-ms="66263">
+  <suite started-at="2022-06-16T11:38:47 IST" name="Default suite" finished-at="2022-06-16T11:40:39 IST" duration-ms="111453">
     <groups>
     </groups>
-    <test started-at="2022-06-15T17:52:01 IST" name="Default test" finished-at="2022-06-15T17:53:07 IST" duration-ms="66263">
-      <class name="testcases.EmailManagementCreate">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:52:01 IST" name="launchApplication" finished-at="2022-06-15T17:52:11 IST" duration-ms="10021" status="PASS">
+    <test started-at="2022-06-16T11:38:47 IST" name="Default test" finished-at="2022-06-16T11:40:39 IST" duration-ms="111453">
+      <class name="testcases.MedianAddSystemDBTC001">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.MedianAddSystemDBTC001@1ed4ae0f]" started-at="2022-06-16T11:38:47 IST" name="launchApplication" finished-at="2022-06-16T11:38:57 IST" duration-ms="9913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runDepartmentidCreate()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:52:11 IST" name="runDepartmentidCreate" finished-at="2022-06-15T17:53:06 IST" duration-ms="55866" status="PASS">
+        <test-method signature="runMedianLogin()[pri:0, instance:testcases.MedianAddSystemDBTC001@1ed4ae0f]" started-at="2022-06-16T11:38:57 IST" name="runMedianLogin" finished-at="2022-06-16T11:40:38 IST" duration-ms="101199" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runDepartmentidCreate -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.EmailManagementCreate@1ed4ae0f]" started-at="2022-06-15T17:53:06 IST" name="closeBrowser" finished-at="2022-06-15T17:53:07 IST" duration-ms="295" status="PASS">
+        </test-method> <!-- runMedianLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.MedianAddSystemDBTC001@1ed4ae0f]" started-at="2022-06-16T11:40:38 IST" name="closeBrowser" finished-at="2022-06-16T11:40:39 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.EmailManagementCreate -->
+      </class> <!-- testcases.MedianAddSystemDBTC001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
