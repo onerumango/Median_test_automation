@@ -5,18 +5,21 @@ import org.testng.annotations.Test;
 import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 
-public class MedianAddSystemAuthDBTC001 extends MedianSpecificMethods{
+public class MedianEditXMLSystemTC001 extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterCheckerUsername()
-		.enterCheckerPassword()
+		login.enterMakerUsername()
+		.enterMakerPassword()
 		.clickSignInButton()
 		.clickSystemInterface()
 		.clickAddSystem()
-		.clickID1()
-		.clickAuth()
-		.clickYes()
-		.clickOK();
+		.clickSystemCode()
+		.clickEdit()
+		.UpdateExternalURI()
+		.clickNextSystemInformation()
+		.clickNextMessageConfiguration()
+		.clickSaveServiceAndHeader()
+		.clickOKServiceAndHeader();
 }
 }
