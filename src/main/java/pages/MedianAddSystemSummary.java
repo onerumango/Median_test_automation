@@ -26,12 +26,12 @@ public class MedianAddSystemSummary extends MedianSpecificMethods{
 
 	}
 	
-	public MedianEditAddSystemDB clickID() {
-		clickElement(locateElement("xpath", props.getProperty("Median.AddSystem.SelectID.Xpath")));
-		return new MedianEditAddSystemDB();
+	public MedianEditAddSystemXML clickSystemCode() {
+		wait(2000);
+		enterValue(locateElement("xpath", props.getProperty("Median.EditSystem.Summary.Search.Xpath")), props.getProperty("Search"));
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.EditSystem.Summary.SelectID.Xpath")));
+		return new MedianEditAddSystemXML();
 	}
-	public MedianAddSystemAuthDB clickID1() {
-		clickElement(locateElement("xpath", props.getProperty("Median.AddSystem.SelectID.Xpath")));
-		return new MedianAddSystemAuthDB();
-	}
+	
 }
