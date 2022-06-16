@@ -8,8 +8,8 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 		wait(2000);
 		enterValue(
 				locateElement("xpath",
-						props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.CodeISO.Xpath")),
-				props.getProperty("CodeDB"));
+						props.getProperty("Median.SystemInterface.AddSystem.SystemInformation.CodeJSON.Xpath")),
+				props.getProperty("CodeJSON"));
 		return this;
 	}
 
@@ -102,32 +102,33 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 	}
 
 	public MedianAddSystemJSON selectMessageProtocol() {
-		selectByIndex(
-				locateElement("xpath",
-						props.getProperty(
-								"Median.SystemInterface.AddSystem.MessageConfiguration.MessageProtocolDropdown.Xpath")),1);
-		wait(10000);
-		return this;
-	}
-
-	public MedianAddSystemJSON selectDataType() {
-		selectByIndex(locateElement("xpath",
-				props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.DataTypeDropdown.Xpath")), 1);
-		wait(10000);
-		return this;
-	}
-
-	public MedianAddSystemJSON clickPlusButton() {
 		wait(2000);
-		clickElement(locateElement("xpath",
-				props.getProperty("Median.SystemInterface.AddSystem.HeaderandServiceDetails.plusButton.Xpath")));
-		return this;
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.JSONMessageProtocol.Xpath")));
+	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.JSONMessageProtocolSelectHTTPS.Xpath")));
+	  	  return this;
 	}
+	public MedianAddSystemJSON selectDataType() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.JSONDataType.Xpath")));
+	    clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.JSONDataTypeSelectXML.Xpath")));
+	  	  return this;
+	}
+	public MedianAddSystemJSON clickNextMessageConfiguration() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.MessageConfiguration.Next.Xpath")));
+		wait(2000); 
+		return this;
+	    }
+
+	
 
 	public MedianAddSystemJSON headerService() {
-		selectByIndex(locateElement("xpath",
-				props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.HeaderService.Xpath")), 1);
-		wait(10000);
+		clickElement(locateElement("xpath",
+				props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.JSONHeader1.Xpath")));
+		wait(2000);
+		clickElement(locateElement("xpath",
+				props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.JSONHeader1SelectService.Xpath")));
+		wait(2000);
 		return this;
 	}
 
@@ -164,6 +165,12 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 								"Median.SystemInterface.AddSystem.Header&ServiceDetails.EncriptionTypeBase64.Xpath")),
 				1);
 		wait(10000);
+		return this;
+	}
+	public MedianAddSystemJSON clickPlusButton() {
+		wait(2000);
+		clickElement(locateElement("xpath",
+				props.getProperty("Median.SystemInterface.AddSystem.HeaderandServiceDetails.plusButton.Xpath")));
 		return this;
 	}
 
