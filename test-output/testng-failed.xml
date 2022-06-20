@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.MedianAddSystemAuthXMLTC001">
+      <class name="testcases.MedianRuleTranslationXMLTC0006">
         <methods>
-          <include name="closeBrowser"/>
           <include name="runMedianLogin"/>
-          <include name="launchApplication"/>
         </methods>
-      </class> <!-- testcases.MedianAddSystemAuthXMLTC001 -->
+      </class> <!-- testcases.MedianRuleTranslationXMLTC0006 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
