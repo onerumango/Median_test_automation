@@ -41,6 +41,7 @@ public class MedianChangePassword extends MedianSpecificMethods{
 	public MedianChangePassword clickLogout() {
 		clickElement(locateElement("xpath", props.getProperty("MedianChangePassword.clickLogout.Xpath")));
 		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("MedianChangePassword.clickYES.Xpath")));
 		return this;		
 	}
 	

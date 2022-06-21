@@ -102,16 +102,22 @@ return new ProcesscodeMappingSummary();
 		wait(2000);
 		return this;
 	}
-	public MedianRuleTranslationISO clickRuleTranslation() {
+	public MedianRuleTranslationISOCreateAndAuth clickRuleTranslation() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
 		wait(7000);
-		return new MedianRuleTranslationISO();
+		return new MedianRuleTranslationISOCreateAndAuth();
 	}
 	public MedianAddSystemSummary clickAddSystem() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.AddSystem.Xpath")));
 		wait(7000);
 		return new MedianAddSystemSummary();
+	}
+	public MedianCreateAndAuthRule clickCreateRule() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.CreateRule.Xpath")));
+		wait(7000);
+		return new MedianCreateAndAuthRule();
 	}
 	
 	public MedianLoginAndLogout clickLogout() {
@@ -126,10 +132,15 @@ return new ProcesscodeMappingSummary();
 		wait(7000);
 		return new MedianRuleTranslationXML();
 	}
-	public MedianRuleTranslationISO clickRuleTranslationISO() {
+	public MedianRuleTranslationISOCreateAndAuth clickRuleTranslationISO() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
 		wait(7000);
-		return new MedianRuleTranslationISO();
+		return new MedianRuleTranslationISOCreateAndAuth();
+	}
+	public MedianRuleMappingCreateAndAuth clickRuleMapping() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleMapping.LeftNavigation")));
+		wait(7000);
+		return new MedianRuleMappingCreateAndAuth();
 	}
 	
 	public MedianProcessMonitoring clickProcessMonitoring() {
