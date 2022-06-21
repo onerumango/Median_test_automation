@@ -70,6 +70,8 @@ public class MedianRuleTranslationXML extends MedianSpecificMethods {
 	}
 	public MedianRuleTranslationXML clickSaveButton() {
 		wait(2000);
+		 jsExecutor(locateElement("xpath", props.getProperty("Median.RuleTranslation.SaveButton.Xpath")));
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.SaveButton.Xpath")));
 		return this;
 	}
