@@ -25,14 +25,16 @@ public class MedianRuleTranslationXML extends MedianSpecificMethods {
 	
 	
 	public MedianRuleTranslationXML fileUpload() throws AWTException {
+		wait(5000);
 		Actions action = new Actions(driver);
 		WebElement chooseFile = locateElement("xpath",props.getProperty("Median.SystemInterface.RuleTranslation.Header&ServiceDetails.XMLFileUpload.Xpath"));
 		action.moveToElement(chooseFile).click().perform();
-		wait(2000);
+		wait(5000);
 		uploadFile("C:\\Users\\NPR11007\\Desktop\\Median\\Request.xml");
 		wait(10000);
 		return this;
 	}
+	
 	public MedianRuleTranslationXML selectTag() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Tag.Xpath")));

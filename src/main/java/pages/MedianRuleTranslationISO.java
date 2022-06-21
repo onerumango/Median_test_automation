@@ -13,22 +13,25 @@ public class MedianRuleTranslationISO extends MedianSpecificMethods {
 	}
 	
 	public MedianRuleTranslationISO dropDownSourceSyetem() {
+		wait(5000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")));
-		wait(7000);
-		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.AutomationCodeISO")));
+		wait(3000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystemISO.xpath")));
 		return this;
 	}
 	
 	public MedianRuleTranslationISO clickFetchButton() {
-		wait(7000);
+		wait(3000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.fetch.xpath")));
-		wait(7000);
+		wait(3000);
 		return this;
 	}
 	
 	public MedianRuleTranslationISO clickSaveButton() {
-		wait(7000);
-		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.NewButton.Xpath")));
+		wait(3000);
+		jsExecutor(locateElement("xpath", props.getProperty("Median.RuleTranslation.save.xpath")));
+		wait(3000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.save.xpath")));
 		return this;
 	}
 	public MedianRuleTranslationISO clickOkPopup() {

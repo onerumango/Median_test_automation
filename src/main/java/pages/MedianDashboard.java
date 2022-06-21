@@ -126,6 +126,11 @@ return new ProcesscodeMappingSummary();
 		wait(7000);
 		return new MedianRuleTranslationXML();
 	}
+	public MedianRuleTranslationISO clickRuleTranslationISO() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
+		wait(7000);
+		return new MedianRuleTranslationISO();
+	}
 	
 	public MedianProcessMonitoring clickProcessMonitoring() {
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.processMonitoring.Xpath")));
@@ -136,11 +141,7 @@ return new ProcesscodeMappingSummary();
 		clickElement(locateElement("xpath", props.getProperty("Median.TreasuryReference.xpath")));
 		return new MedianTreasuryReference();
 	}
-	public MedianRuleTranslationISO clickRuleTranslationISO() {
-		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
-		wait(7000);
-		return new MedianRuleTranslationISO();
-	}
+	
 
 	 public UserCreate selectSystemMaintenance1() {
 		 clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Xpath")));

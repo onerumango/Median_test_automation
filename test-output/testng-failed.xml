@@ -5,6 +5,8 @@
     <classes>
       <class name="testcases.MedianRuleTranslationXMLTC0006">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
           <include name="runMedianLogin"/>
         </methods>
       </class> <!-- testcases.MedianRuleTranslationXMLTC0006 -->
