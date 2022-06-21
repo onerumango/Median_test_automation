@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-20T19:46:34 IST" name="Default suite" finished-at="2022-06-20T19:47:59 IST" duration-ms="84372">
+  <suite started-at="2022-06-21T11:44:48 IST" name="Default suite" finished-at="2022-06-21T11:46:35 IST" duration-ms="107011">
     <groups>
     </groups>
-    <test started-at="2022-06-20T19:46:34 IST" name="Default test" finished-at="2022-06-20T19:47:59 IST" duration-ms="84372">
-      <class name="testcases.MedianRuleTranslationISOTC00003">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.MedianRuleTranslationISOTC00003@1ed4ae0f]" started-at="2022-06-20T19:46:34 IST" name="launchApplication" finished-at="2022-06-20T19:46:45 IST" duration-ms="11046" status="PASS">
+    <test started-at="2022-06-21T11:44:48 IST" name="Default test" finished-at="2022-06-21T11:46:35 IST" duration-ms="107011">
+      <class name="testcases.MedianRuleTranslationXMLTC0006">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.MedianRuleTranslationXMLTC0006@1ed4ae0f]" started-at="2022-06-21T11:44:48 IST" name="launchApplication" finished-at="2022-06-21T11:44:58 IST" duration-ms="9586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runMedianRuleTranslation()[pri:0, instance:testcases.MedianRuleTranslationISOTC00003@1ed4ae0f]" started-at="2022-06-20T19:46:45 IST" name="runMedianRuleTranslation" finished-at="2022-06-20T19:47:59 IST" duration-ms="73116" status="PASS">
+        <test-method signature="runMedianLogin()[pri:0, instance:testcases.MedianRuleTranslationXMLTC0006@1ed4ae0f]" started-at="2022-06-21T11:44:58 IST" name="runMedianLogin" finished-at="2022-06-21T11:46:35 IST" duration-ms="97154" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runMedianRuleTranslation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.MedianRuleTranslationISOTC00003@1ed4ae0f]" started-at="2022-06-20T19:47:59 IST" name="closeBrowser" finished-at="2022-06-20T19:47:59 IST" duration-ms="154" status="PASS">
+        </test-method> <!-- runMedianLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.MedianRuleTranslationXMLTC0006@1ed4ae0f]" started-at="2022-06-21T11:46:35 IST" name="closeBrowser" finished-at="2022-06-21T11:46:35 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.MedianRuleTranslationISOTC00003 -->
+      </class> <!-- testcases.MedianRuleTranslationXMLTC0006 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
