@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\NPR11007\AppData\Local\Temp\testng-eclipse-2077847617\testng-customsuite.xml</span>
+                    <span>C:\Users\NPR11007\AppData\Local\Temp\testng-eclipse-1446044409\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -134,14 +134,14 @@
 Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
 System info: host: &apos;NPR11007&apos;, ip: &apos;192.168.0.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:/User/Admin/AppData/Local...}, goog:chromeOptions: {debuggerAddress: localhost:50972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f83051db0d741025b825ee2dbc13062d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:/User/Admin/AppData/Local...}, goog:chromeOptions: {debuggerAddress: localhost:63208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a22d92692ea654d84dbe89a510b65ac5
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
 	at base.MedianGenericWrapper.locateElement(MedianGenericWrapper.java:73)
-	at pages.MedianLoginAndLogout.clickSignInButton(MedianLoginAndLogout.java:34)
-	at testcases.MedianRuleMappingCreateAndAuthTestCase.runMedianRuleTranslation(MedianRuleMappingCreateAndAuthTestCase.java:14)
+	at pages.MedianRuleMappingCreateAndAuth.clickSaveButton(MedianRuleMappingCreateAndAuth.java:56)
+	at testcases.MedianRuleMappingCreateAndAuthTestCase.runMedianRuleTranslation(MedianRuleMappingCreateAndAuthTestCase.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,13 +182,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
 	... 33 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:46511 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:30147 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:46511 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:30147 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -205,7 +205,7 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\NPR11007\AppData\Local\Temp\testng-eclipse-2077847617\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\NPR11007\AppData\Local\Temp\testng-eclipse-1446044409\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,12 +258,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runMedianRuleTranslation')
 data.setCell(0, 2, 'testcases.MedianRuleMappingCreateAndAuthTestCase')
-data.setCell(0, 3, 80630);
+data.setCell(0, 3, 154170);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -298,13 +298,13 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runMedianRuleTranslation</span>
-                <span class="method-start">8508 ms</span>
+                <span class="method-start">8526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">89183 ms</span>
+                <span class="method-start">162720 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
