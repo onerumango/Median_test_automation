@@ -9,7 +9,11 @@ public class ProcessCodeMappingAuthTestcases extends MedianSpecificMethods{
 	@Test
 	public void runProcessCodeMappingAuth() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
-		.clickFileUploadMaintenanceLink().clickProcesscodemapping().selectUnauthRecord().clickAuth();
+		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
+		.clickFileUploadMaintenanceLink()
+		.clickProcesscodemapping()
+		.searchProcessCode()
+		.selectRecordforAuth()
+		.clickAuth();
 	}
 }

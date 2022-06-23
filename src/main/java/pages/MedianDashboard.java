@@ -39,8 +39,9 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 
 	public MedianDashboard clickfileUploadMaintenance() {
-		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
 		wait(7000);
+		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.Xpath")));
+		wait(3000);
 		return this;
 	}
 

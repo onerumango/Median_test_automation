@@ -16,9 +16,9 @@ public class MedianEditExternalSystemTC01 extends MedianSpecificMethods {
 		.clickfileUploadMaintenance()
 		.clickexternalSystem()
 		.selectEdit()
-		.enterExternalSystemCode()
-		.enterExternalSystemName()
-		.selectDepartment()
+				/*
+				 * .enterExternalSystemCode() .enterExternalSystemName() .selectDepartment()
+				 */
 		.clickSaveButton();
 		
 	}
