@@ -10,7 +10,11 @@ public class ProcessCodemappingEditTestcases extends MedianSpecificMethods{
 	public void runProcessCodemappingEdit() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
-		.clickFileUploadMaintenanceLink().clickProcesscodemapping().selectRecord().enterProcessCode().enterMaxUploadLimit()
+		.clickFileUploadMaintenanceLink()
+		.clickProcesscodemapping()
+		.searchProcessCode()
+		.selectRecord()
+		.clickEdit()
          .clickSave();
 }
 }

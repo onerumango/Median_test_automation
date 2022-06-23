@@ -32,6 +32,7 @@ public class MedianEditExternalSystem extends MedianSpecificMethods
 		wait(2000);
 		clickElement(locateElement("xpath",props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Save.Xpath")));
 		wait(5000);
+		clickElement(locateElement("xpath",props.getProperty("Median.FileUploadMaintenance.ExternalSystem.OK.Xpath")));
         return new MedianEditExternalSystem();
 	
 	}

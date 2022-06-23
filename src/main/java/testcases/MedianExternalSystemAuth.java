@@ -17,7 +17,7 @@ public class MedianExternalSystemAuth extends MedianSpecificMethods {
 		.clickSignInButton()
 		.clickfileUploadMaintenance()
 		.clickexternalSystem()
-		.selectExternalAuth()
+		.selectExternalSystem()
 		.clickAuthButton();
 	}
 }
