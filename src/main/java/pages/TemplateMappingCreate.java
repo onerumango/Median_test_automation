@@ -4,87 +4,233 @@ import base.MedianSpecificMethods;
 
 public class TemplateMappingCreate extends MedianSpecificMethods{
 	public TemplateMappingCreate clickExtsysDropdown() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Dropdown.Xpath")));
-		return this;
+		
+		  wait(3000); 
+		  clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")));
+		  wait(3000);
+		
+		  enterValue(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")),props.getProperty("WriteExternalSystem"));
+		 return this;
 	}
 	public TemplateMappingCreate selectExternalSystem() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.SelectExternalSystem.Xpath")));
 		return this;
-	}
-	public TemplateMappingCreate clickProcesscodeDropdown() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.PCDropdown.Xpath")));
-		return this;
-	}
-	public TemplateMappingCreate selectProcessCode() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ProcessCode.Xpath")));
-		return this;
-	}
+	}	
 	public TemplateMappingCreate enterDatastartingRow() {
+		wait(1000);
   	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.DataStartingrow.Xpath")), props.getProperty("DataStartingrow"));
 		return this;
     }
 	public TemplateMappingCreate enterCurrency() {
+		wait(1000);
 	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Currency.Xpath")), props.getProperty("Currency"));
 			return this;
 	    }
 	public TemplateMappingCreate enterSheetNumber() {
+		wait(1000);
 	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.SheetNumber.Xpath")), props.getProperty("SheetNumber"));
 			return this;
 	    }
-	public TemplateMappingCreate enterName1() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Name1.Xpath")), props.getProperty("Name1"));
-			return this;
-	    }
-	public TemplateMappingCreate clickDatatypeDropdown1() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.DTDropdown1.Xpath")));
+	public TemplateMappingCreate selectIsHeaderPresent() {
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.IsHeaderPresent.Xpath")));
 		return this;
 	}
+	public TemplateMappingCreate enterBranchCode() {
+		wait(1000);
+	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.branchCode.Xpath")), props.getProperty("branchCode"));
+			return this;
+	    }
 	public TemplateMappingCreate selectDatatype1() {
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.DTDropdown1.Xpath")));
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Datatype1.Xpath")));
 		return this;
 	}
 	public TemplateMappingCreate clickMandatory1() {
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mandatory1.Xpath")));
 		return this;
 	}
 	public TemplateMappingCreate enterHeadername1() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Headername1.Xpath")), props.getProperty("Headername1"));
+		wait(1000);
+	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Headername1.Xpath")), props.getProperty("branchCodeHeadername"));
 			return this;
 	    }
 	public TemplateMappingCreate enterMappingcolumn1() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mappingcolumn1.Xpath")), props.getProperty("Mappingcolumn1"));
+		wait(1000);
+	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mappingcolumn1.Xpath")), props.getProperty("branchCodeMappingcolumn"));
 			return this;
 	    }
 	public TemplateMappingCreate clickAddrow() {
+		wait(1000);
+		jsExecutor(locateElement("xpath", props.getProperty("TemplateMappingCreate.Addrow.Xpath")));
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Addrow.Xpath")));
 		return this;
 	}
-	public TemplateMappingCreate enterName2() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Name2.Xpath")), props.getProperty("Name2"));
+	
+	
+	public TemplateMappingCreate fillCcyCdDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCd.Xpath")), props.getProperty("ccyCd"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdHeaderName.Xpath")), props.getProperty("ccyCdHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdMappingcolumn.Xpath")), props.getProperty("ccyCdMappingcolumn"));
 			return this;
 	    }
-	public TemplateMappingCreate clickDatatypeDropdown2() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.DTDropdown2.Xpath")));
-		return this;
-	}
-	public TemplateMappingCreate selectDatatype2() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Datatype2.Xpath")));
-		return this;
-	}
-	public TemplateMappingCreate clickMandatory2() {
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mandatory2.Xpath")));
-		return this;
-	}
-	public TemplateMappingCreate enterHeadername2() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Headername2.Xpath")), props.getProperty("Headername2"));
+	
+	public TemplateMappingCreate fillAmountDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.amount.Xpath")), props.getProperty("amount"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.amountDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.amountDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.amountHeaderName.Xpath")), props.getProperty("amountHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.amountMappingcolumn.Xpath")), props.getProperty("amountMappingcolumn"));
 			return this;
 	    }
-	public TemplateMappingCreate enterMappingcolumn2() {
-	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mappingcolumn2.Xpath")), props.getProperty("Mappingcolumn2"));
+	
+	public TemplateMappingCreate fillAccountDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.account.Xpath")), props.getProperty("account"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountHeaderName.Xpath")), props.getProperty("accountHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountMappingcolumn.Xpath")), props.getProperty("accountMappingcolumn"));
 			return this;
 	    }
+	
+	public TemplateMappingCreate fillAccountBranchDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranch.Xpath")), props.getProperty("accountBranch"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranchDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranchDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranchHeaderName.Xpath")), props.getProperty("accountBranchHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranchMappingcolumn.Xpath")), props.getProperty("accountBranchMappingcolumn"));
+			return this;
+	    }
+	public TemplateMappingCreate fillDrCrDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCr.Xpath")), props.getProperty("drCr"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCrDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCrDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCrHeaderName.Xpath")), props.getProperty("drCrHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCrMappingcolumn.Xpath")), props.getProperty("drCrMappingcolumn"));
+			return this;
+	    }
+	
+	public TemplateMappingCreate fillLcyEquivalentDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.lcyEquivalent.Xpath")), props.getProperty("lcyEquivalent"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.lcyEquivalentDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.lcyEquivalentDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.lcyEquivalentHeaderName.Xpath")), props.getProperty("lcyEquivalentHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.lcyEquivalentMappingcolumn.Xpath")), props.getProperty("lcyEquivalentMappingcolumn"));
+			return this;
+	    }
+	public TemplateMappingCreate fillExchRateDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRate.Xpath")), props.getProperty("exchRate"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRateDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRateDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRateHeaderName.Xpath")), props.getProperty("exchRateHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRateMappingcolumn.Xpath")), props.getProperty("exchRateMappingcolumn"));
+			return this;
+	    }
+	public TemplateMappingCreate fillValueDateDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDate.Xpath")), props.getProperty("valueDate"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDateDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDateDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDateHeaderName.Xpath")), props.getProperty("valueDateHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Date.Xpath")), props.getProperty("Date"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDateMappingcolumn.Xpath")), props.getProperty("valueDateMappingcolumn"));
+			return this;
+	    }
+	public TemplateMappingCreate fillFinCycleDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.finCycle.Xpath")), props.getProperty("finCycle"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.finCycleDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.finCycleDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.finCycleHeaderName.Xpath")), props.getProperty("finCycleHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.finCycleMappingcolumn.Xpath")), props.getProperty("finCycleMappingcolumn"));
+			return this;
+	    }
+	
+	public TemplateMappingCreate fillPeriodCodeDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCode.Xpath")), props.getProperty("periodCode"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCodeDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCodeDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCodeHeaderName.Xpath")), props.getProperty("periodCodeHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCodeMappingcolumn.Xpath")), props.getProperty("periodCodeMappingcolumn"));
+			return this;
+	    }
+	
+	public TemplateMappingCreate fillAddlTextDetails() {
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlText.Xpath")), props.getProperty("addlText"));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlTextDTDropdown.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlTextDatatype.Xpath")));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlTextHeaderName.Xpath")), props.getProperty("addlTextHeaderName"));
+		wait(1000);
+		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlTextMappingcolumn.Xpath")), props.getProperty("addlTextMappingcolumn"));
+			return this;
+	    }
+	
+	
 	public TemplateMappingCreate clickSave() {
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
+		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.OK.Xpath")));
 		return this;
 	}
 	public MedianDashboard clickExit() {
