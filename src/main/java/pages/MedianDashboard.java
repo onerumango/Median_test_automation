@@ -46,6 +46,7 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 
 	public MedianExternalSystemSummary clickexternalSystem() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUploadMaintenance.ExternalSystem.Xpath")));
 		wait(7000);
 
@@ -53,16 +54,19 @@ public class MedianDashboard extends MedianSpecificMethods {
 	}
 
 	public MedianDashboard clickFileUploadMaintenanceLink() {
+		wait(4000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.FileUploadMaintenance.Xpath")));
 		return this;
 	}
 
 	public ProcesscodeMappingSummary clickProcesscodemapping() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.ProcessCodeMapping.Xpath")));
 return new ProcesscodeMappingSummary();
    
 }
 	public TemplateMappingSummary clickTemplatemapping() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.Templatemapping.Xpath")));
         return new TemplateMappingSummary();
 }
@@ -75,18 +79,21 @@ return new ProcesscodeMappingSummary();
 	}
 
 	public MedianroleSummary selectrole() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Dropdown.Role.Xpath")));
 		wait(7000);
 		return new MedianroleSummary();
 	}
 
 	public MedianDashboard selectFileUpload() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.Xpath")));
 		wait(7000);
 		return this;
 	}
 
 	public MedianUploadExcel selectUploadExcel() {
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.FileUpload.UploadExcel.Xpath")));
 		wait(7000);
 		return new MedianUploadExcel();
