@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-23T18:30:46 IST" name="Default suite" finished-at="2022-06-23T18:32:07 IST" duration-ms="81679">
+  <suite started-at="2022-06-26T21:57:39 IST" name="Default suite" finished-at="2022-06-26T21:59:03 IST" duration-ms="84106">
     <groups>
     </groups>
-    <test started-at="2022-06-23T18:30:46 IST" name="Default test" finished-at="2022-06-23T18:32:07 IST" duration-ms="81679">
-      <class name="testcases.ProcessCodeMappingAuthTestcases">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.ProcessCodeMappingAuthTestcases@1ed4ae0f]" started-at="2022-06-23T18:30:46 IST" name="launchApplication" finished-at="2022-06-23T18:30:55 IST" duration-ms="9089" status="PASS">
+    <test started-at="2022-06-26T21:57:39 IST" name="Default test" finished-at="2022-06-26T21:59:03 IST" duration-ms="84106">
+      <class name="testcases.MedianNewRoleTC01">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.MedianNewRoleTC01@1ed4ae0f]" started-at="2022-06-26T21:57:39 IST" name="launchApplication" finished-at="2022-06-26T21:57:53 IST" duration-ms="13923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runProcessCodeMappingAuth()[pri:0, instance:testcases.ProcessCodeMappingAuthTestcases@1ed4ae0f]" started-at="2022-06-23T18:30:55 IST" name="runProcessCodeMappingAuth" finished-at="2022-06-23T18:31:47 IST" duration-ms="52080" status="PASS">
+        <test-method signature="runMedianLogin()[pri:0, instance:testcases.MedianNewRoleTC01@1ed4ae0f]" started-at="2022-06-26T21:57:53 IST" name="runMedianLogin" finished-at="2022-06-26T21:59:03 IST" duration-ms="69938" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runProcessCodeMappingAuth -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.ProcessCodeMappingAuthTestcases@1ed4ae0f]" started-at="2022-06-23T18:31:47 IST" name="closeBrowser" finished-at="2022-06-23T18:32:07 IST" duration-ms="20443" status="PASS">
+        </test-method> <!-- runMedianLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.MedianNewRoleTC01@1ed4ae0f]" started-at="2022-06-26T21:59:03 IST" name="closeBrowser" finished-at="2022-06-26T21:59:03 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.ProcessCodeMappingAuthTestcases -->
+      </class> <!-- testcases.MedianNewRoleTC01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
