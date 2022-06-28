@@ -233,7 +233,13 @@ return new ProcesscodeMappingSummary();
 			clickElement(locateElement("xpath", props.getProperty("Median.SystemParamMaintenance.AuthTransactioncodeMaintenance.Xpath")));
 			return new AuthTransactionCodeMaintenance();
 	}
-	 
+	 public MedianCustomerSearch selectAccountBlockCustomerSearch() {
+		    wait(5000);
+	    	 clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.AccountBlock.XPath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.CustomerSearch.XPath")));
+			return new MedianCustomerSearch();
+	}
 	 
 }
 
