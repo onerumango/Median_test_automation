@@ -240,6 +240,20 @@ return new ProcesscodeMappingSummary();
 			clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.CustomerSearch.XPath")));
 			return new MedianCustomerSearch();
 	}
+	 public MedianAccountClosureMaintenanceSummary selectAccountClosureMaintenance() {
+		    wait(5000);
+	    	 clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.AccountClosure.XPath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.AccountClosure.AccountClosureMaintenance.XPath")));
+			return new MedianAccountClosureMaintenanceSummary();
+	}
+	 public MedianChargeMaintenanceSummary selectChargeMaintenance() {
+		    wait(5000);
+	    	 clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.AccountClosure.XPath")));
+			wait(5000);
+			clickElement(locateElement("xpath", props.getProperty("Median.Dashboard.AccountClosure.ChargeMaintenance.XPath")));
+			return new MedianChargeMaintenanceSummary();
+	}
 	 
 }
 

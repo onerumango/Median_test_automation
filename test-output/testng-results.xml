@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-28T16:26:20 IST" name="Default suite" finished-at="2022-06-28T16:27:28 IST" duration-ms="68688">
+  <suite started-at="2022-06-28T17:04:10 IST" name="Default suite" finished-at="2022-06-28T17:05:04 IST" duration-ms="53487">
     <groups>
     </groups>
-    <test started-at="2022-06-28T16:26:20 IST" name="Default test" finished-at="2022-06-28T16:27:28 IST" duration-ms="68688">
-      <class name="testcases.AccountBlockCustomerSearchTestCase">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.AccountBlockCustomerSearchTestCase@1ed4ae0f]" started-at="2022-06-28T16:26:20 IST" name="launchApplication" finished-at="2022-06-28T16:26:28 IST" duration-ms="8655" status="PASS">
+    <test started-at="2022-06-28T17:04:10 IST" name="Default test" finished-at="2022-06-28T17:05:04 IST" duration-ms="53487">
+      <class name="testcases.MedianCreateAccountClosureMaintenanceTestCase">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.MedianCreateAccountClosureMaintenanceTestCase@1ed4ae0f]" started-at="2022-06-28T17:04:10 IST" name="launchApplication" finished-at="2022-06-28T17:04:21 IST" duration-ms="10401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runMedianLogin()[pri:0, instance:testcases.AccountBlockCustomerSearchTestCase@1ed4ae0f]" started-at="2022-06-28T16:26:28 IST" name="runMedianLogin" finished-at="2022-06-28T16:27:28 IST" duration-ms="59699" status="PASS">
+        <test-method signature="runMedianLogin()[pri:0, instance:testcases.MedianCreateAccountClosureMaintenanceTestCase@1ed4ae0f]" started-at="2022-06-28T17:04:21 IST" name="runMedianLogin" finished-at="2022-06-28T17:05:03 IST" duration-ms="42853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runMedianLogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.AccountBlockCustomerSearchTestCase@1ed4ae0f]" started-at="2022-06-28T16:27:28 IST" name="closeBrowser" finished-at="2022-06-28T16:27:28 IST" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.MedianCreateAccountClosureMaintenanceTestCase@1ed4ae0f]" started-at="2022-06-28T17:05:03 IST" name="closeBrowser" finished-at="2022-06-28T17:05:04 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.AccountBlockCustomerSearchTestCase -->
+      </class> <!-- testcases.MedianCreateAccountClosureMaintenanceTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
