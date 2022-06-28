@@ -15,6 +15,8 @@ public class MedianCreateAccountClosureMaintenanceTestCase extends MedianSpecifi
 		.selectAccountClosureMaintenance()
 		.clickNew()
 		.selectAccountType()
+		.enterUDFDetails()
+		
 		
 ;
 }
