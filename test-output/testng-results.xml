@@ -2,27 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T22:32:39 IST" name="Default suite" finished-at="2022-06-27T22:36:50 IST" duration-ms="251187">
+  <suite started-at="2022-06-28T15:19:12 IST" name="Default suite" finished-at="2022-06-28T15:23:06 IST" duration-ms="234213">
     <groups>
     </groups>
-    <test started-at="2022-06-27T22:32:39 IST" name="Default test" finished-at="2022-06-27T22:36:50 IST" duration-ms="251187">
+    <test started-at="2022-06-28T15:19:12 IST" name="Default test" finished-at="2022-06-28T15:23:06 IST" duration-ms="234213">
       <class name="testcases.TemplateMappingCreate">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-27T22:32:39 IST" name="launchApplication" finished-at="2022-06-27T22:32:47 IST" duration-ms="8745" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-28T15:19:12 IST" name="launchApplication" finished-at="2022-06-28T15:19:21 IST" duration-ms="9168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="runTemplateMappingCreate()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-27T22:32:47 IST" name="runTemplateMappingCreate" finished-at="2022-06-27T22:36:49 IST" duration-ms="242126" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="runTemplateMappingCreate()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-28T15:19:21 IST" name="runTemplateMappingCreate" finished-at="2022-06-28T15:22:07 IST" duration-ms="165871" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[Cannot find elements when the selector is null.]]>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'NPR11007', ip: '192.168.0.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:/User/Admin/AppData/Local...}, goog:chromeOptions: {debuggerAddress: localhost:51166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464fc167372a386748e4ba7fd71323a0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the selector is null.
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:330)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'NPR11007', ip: '192.168.0.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:/User/Admin/AppData/Local...}, goog:chromeOptions: {debuggerAddress: localhost:51166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 464fc167372a386748e4ba7fd71323a0
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
 at base.MedianGenericWrapper.locateElement(MedianGenericWrapper.java:73)
-at pages.MedianDashboard.clickLogout(MedianDashboard.java:133)
-at testcases.TemplateMappingCreate.runTemplateMappingCreate(TemplateMappingCreate.java:53)
+at pages.TemplateMappingCreate.selectDatatype1(TemplateMappingCreate.java:47)
+at testcases.TemplateMappingCreate.runTemplateMappingCreate(TemplateMappingCreate.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,13 +62,39 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:55)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+... 33 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:12408 after 60000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
+... 42 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:12408 after 60000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runTemplateMappingCreate -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-27T22:36:50 IST" name="closeBrowser" finished-at="2022-06-27T22:36:50 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TemplateMappingCreate@1ed4ae0f]" started-at="2022-06-28T15:22:07 IST" name="closeBrowser" finished-at="2022-06-28T15:23:06 IST" duration-ms="59073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

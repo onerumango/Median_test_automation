@@ -20,8 +20,9 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 		.enterSheetNumber()
 		.selectIsHeaderPresent()
 		.enterBranchCode()
+		.clickMandatory1()
 		.selectDatatype1()
-		//.clickMandatory1()
+		
 		.enterHeadername1()
 		.enterMappingcolumn1()
 		.clickAddrow()
