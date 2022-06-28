@@ -1,16 +1,15 @@
 package pages;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
 import base.MedianSpecificMethods;
 
 public class TemplateMappingCreate extends MedianSpecificMethods{
-	public TemplateMappingCreate clickExtsysDropdown() {
-		
-		  wait(3000); 
-		  clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")));
-		  wait(3000);
-		
-		  enterValue(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")),props.getProperty("WriteExternalSystem"));
-		 return this;
+	public TemplateMappingCreate clickExtsysDropdown() {	
+       clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath"))); wait(3000);		  
+	   enterValue(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")),props.getProperty("WriteExternalSystem"));
+	 return this;
 	}
 	public TemplateMappingCreate selectExternalSystem() {
 		wait(1000);
@@ -43,17 +42,20 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 			return this;
 	    }
 	public TemplateMappingCreate selectDatatype1() {
-		wait(1000);
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.DTDropdown1.Xpath")));
-		wait(1000);
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Datatype1.Xpath")));
+		
+		  wait(1000); 
+		  clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.DTDropdown1.Xpath"))); 
+		  wait(1000);
+		  clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.Datatype1.Xpath")));
 		return this;
 	}
+	
 	public TemplateMappingCreate clickMandatory1() {
-		wait(1000);
+		wait(5000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mandatory1.Xpath")));
 		return this;
 	}
+	
 	public TemplateMappingCreate enterHeadername1() {
 		wait(1000);
 	  	  enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.Headername1.Xpath")), props.getProperty("branchCodeHeadername"));
@@ -227,6 +229,8 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	
 	
 	public TemplateMappingCreate clickSave() {
+		wait(1000);
+		jsExecutor(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
 		wait(1000);
