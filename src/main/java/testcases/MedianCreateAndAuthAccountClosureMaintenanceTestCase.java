@@ -6,7 +6,7 @@ import base.MedianSpecificMethods;
 import pages.MedianDashboard;
 import pages.MedianLoginAndLogout;
 
-public class MedianCreateAccountClosureMaintenanceTestCase extends MedianSpecificMethods{
+public class MedianCreateAndAuthAccountClosureMaintenanceTestCase extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
