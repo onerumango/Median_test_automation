@@ -8,5 +8,10 @@ public class MedianAccountClosureMaintenanceSummary extends MedianSpecificMethod
 		clickElement(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.clickNew.XPath")));
 		return new MedianCreateAccountClosureMaintenance();
 	}
+	public MedianAccountClosureMaintenanceDetails clickAccountType() {
+		wait(3000);
+		clickElement(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.ClickAccountType.XPath")));
+		return new MedianAccountClosureMaintenanceDetails();
+	}
 
 }
