@@ -7,7 +7,8 @@ import base.MedianSpecificMethods;
 
 public class TemplateMappingCreate extends MedianSpecificMethods{
 	public TemplateMappingCreate clickExtsysDropdown() {	
-       clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath"))); wait(3000);		  
+       clickElement(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath"))); 
+       wait(3000);		  
 	   enterValue(locateElement("xpath",props.getProperty("TemplateMappingCreate.ExternalSystem.Xpath")),props.getProperty("WriteExternalSystem"));
 	 return this;
 	}
