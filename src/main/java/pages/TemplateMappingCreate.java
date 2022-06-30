@@ -1,7 +1,9 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import base.MedianSpecificMethods;
 
@@ -53,7 +55,15 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	
 	public TemplateMappingCreate clickMandatory1() {
 		wait(5000);
-		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Mandatory1.Xpath")));
+		/*
+		 * Actions action = new Actions(driver); WebElement mandatory=
+		 * locateElement("xpath",
+		 * props.getProperty("TemplateMappingCreate.Mandatory1.Xpath"));
+		 * action.moveToElement(mandatory).click().build().perform();
+		 */
+		String cssPath = "div.checkboxdiv div.checkStyle label";
+		((JavascriptExecutor)driver).executeScript("document.querySelector(arguments[0],':before').click();",cssPath);
+		
 		return this;
 	}
 	
@@ -84,6 +94,9 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDatatype.Xpath")));
 		wait(1000);
+		String cssPath = "div.checkboxdiv div.checkStyle label";
+		((JavascriptExecutor)driver).executeScript("document.querySelector(arguments[0],':after').click();",cssPath);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdHeaderName.Xpath")), props.getProperty("ccyCdHeaderName"));
 		wait(1000);
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdMappingcolumn.Xpath")), props.getProperty("ccyCdMappingcolumn"));
