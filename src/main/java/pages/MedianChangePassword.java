@@ -5,8 +5,10 @@ import base.MedianSpecificMethods;
 public class MedianChangePassword extends MedianSpecificMethods{
 	
 	public MedianChangePassword clickChangePassword() {
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.changePassword.Xpath")));
 		wait(1000);
+		clickElement(locateElement("xpath", props.getProperty("MedianDashboard.changePassword.YES.Xpath")));
 		return this;
 	}
 	public MedianChangePassword enterOldPassword() {
