@@ -91,7 +91,7 @@ public class MedianAddSystemXML extends MedianSpecificMethods{
 		action.moveToElement(chooseFile).click().perform();
 		wait(2000);
 		uploadFile("C:\\Users\\NPR11007\\Desktop\\Median\\Request.xml");
-		wait(10000);
+		wait(5000);
 		return this;
 	}
 	public MedianAddSystemXML clickOKButtonXMLFile() {
@@ -144,6 +144,8 @@ public class MedianAddSystemXML extends MedianSpecificMethods{
 	}
 	
 	public MedianAddSystemXML clickSaveServiceAndHeader() {
+		wait(2000);
+		jsExecutor(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.Save.Xpath")));
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.Save.Xpath")));
 	  	 return this;

@@ -72,7 +72,8 @@ public class MedianEditRole extends MedianSpecificMethods
 		jsExecutor(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Edit.Save.Xpath")));
 		wait(2000);
 		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Edit.Save.Xpath")));
-		wait(5000);
+		wait(2000);
+		clickElement(locateElement("xpath",props.getProperty("Median.SystemMaintenance.Edit.OK.Xpath")));
         return new MedianAuthRole();
 	}
 

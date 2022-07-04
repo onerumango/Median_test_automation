@@ -9,7 +9,7 @@ public class EmailManagementAuth extends MedianSpecificMethods{
 	@Test
 	public void runDepartmentidCreate() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
-		login.enterMakerUsername().enterMakerPassword().clickSignInButton()
+		login.enterCheckerUsername().enterCheckerPassword().clickSignInButton()
 		.clickSystemparamMaintenanceLink().clickEmailManagement().selectUnauthRecord().clickAuth();
 	}
 
