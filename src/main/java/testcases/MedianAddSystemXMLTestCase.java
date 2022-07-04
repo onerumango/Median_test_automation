@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
 
-public class MedianAddSystemIXMLTestCase extends MedianSpecificMethods{
+public class MedianAddSystemXMLTestCase extends MedianSpecificMethods{
 
 	@Test
 	public void runMedianLogin() throws InterruptedException, AWTException {

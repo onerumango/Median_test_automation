@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.MedianChangePasswordTestCase">
+      <class name="testcases.MedianAddSystemJsonTC0007">
         <methods>
           <include name="closeBrowser"/>
           <include name="runMedianLogin"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- testcases.MedianChangePasswordTestCase -->
+      </class> <!-- testcases.MedianAddSystemJsonTC0007 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

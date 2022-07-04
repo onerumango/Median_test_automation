@@ -53,8 +53,9 @@ public class UserCreate extends MedianSpecificMethods{
       public UserCreate clickSave() {
     	  wait(1000);
     	  jsExecutor(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.New.Save.Xpath")));
-    	  wait(5000);
+    	  wait(2000);
     	  clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.New.Save.Xpath")));
+    	  clickElement(locateElement("xpath", props.getProperty("Median.SystemMaintenance.Users.New.OK.Xpath")));
     	  return this;
       }
       
