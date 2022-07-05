@@ -124,7 +124,7 @@ return new ProcesscodeMappingSummary();
 	public MedianCreateAndAuthRule clickCreateRule() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("MedianNavbar.SystemInterface.CreateRule.Xpath")));
-		wait(7000);
+		wait(2000);
 		return new MedianCreateAndAuthRule();
 	}
 	

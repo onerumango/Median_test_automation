@@ -12,14 +12,18 @@ public class MedianRuleMappingCreateAndAuth extends MedianSpecificMethods{
 		wait(3000);
 		clickElement(locateElement("xpath", props.getProperty("Median.CreateRuleMapping.SourceSystem.Xpath")));
 		wait(3000);
-		clickElement(locateElement("xpath", props.getProperty("Median.CreateRuleMapping.selectSourceSystem.Xpath")));
+		enterValue(locateElement("xpath",props.getProperty("Median.CreateRuleMapping.SourceSystem.Xpath")),props.getProperty("WriteSourceSystemInRuleMapping"));
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleMapping.selectSourceSystem.Xpath")));
 		return this;
 	}
 	public MedianRuleMappingCreateAndAuth selectDestinationSystem() {
 		wait(3000);
 		clickElement(locateElement("xpath", props.getProperty("Median.CreateRuleMapping.DestinationSystem.Xpath")));
 		wait(3000);
-		clickElement(locateElement("xpath", props.getProperty("Median.CreateRuleMapping.selectDestinationSystem.Xpath")));
+		enterValue(locateElement("xpath",props.getProperty("Median.CreateRuleMapping.DestinationSystem.Xpath")),props.getProperty("WriteDestinationSystemInRuleMapping"));
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleMapping.selectDestinationSystem.Xpath")));
 		return this;
 	}
 	public MedianRuleMappingCreateAndAuth clickFetchButton() {

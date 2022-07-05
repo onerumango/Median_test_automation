@@ -13,12 +13,18 @@ public class MedianRuleTranslationISOCreateAndAuth extends MedianSpecificMethods
 	}
 	
 	public MedianRuleTranslationISOCreateAndAuth dropDownSourceSyetem() {
-		wait(5000);
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")));
-		wait(3000);
-		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystemISO.xpath")));
+		wait(2000);
+		enterValue(locateElement("xpath",props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")),props.getProperty("WritesourceSystemISO"));
 		return this;
 	}
+	public MedianRuleTranslationISOCreateAndAuth selectdropDownSourceSyetem() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.selectSourceSystem.Xpath")));
+		return this;
+	}
+	
 	
 	public MedianRuleTranslationISOCreateAndAuth clickFetchButton() {
 		wait(3000);

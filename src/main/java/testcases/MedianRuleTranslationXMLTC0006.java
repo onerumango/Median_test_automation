@@ -18,6 +18,7 @@ public class MedianRuleTranslationXMLTC0006 extends MedianSpecificMethods{
 	    .clickRuleTranslationXML()
 	    .clickNewButton()
 	    .dropDownSourceSyetem()
+	    .selectdropDownSourceSyetem()
 	    .fileUpload()
 	    .selectTag()
 	    .selectDataType()

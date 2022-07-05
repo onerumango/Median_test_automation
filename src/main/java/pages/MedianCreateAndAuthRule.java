@@ -4,7 +4,7 @@ import base.MedianSpecificMethods;
 
 public class MedianCreateAndAuthRule extends MedianSpecificMethods{
 	public MedianCreateAndAuthRule clickNewButton() {
-		wait(7000);
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.NewButton.Xpath")));
 		return this;
 	}
@@ -22,14 +22,18 @@ public class MedianCreateAndAuthRule extends MedianSpecificMethods{
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.SourceSystem.Xpath")));
 		wait(2000);
-	    clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.SelectSourceSystem.Xpath")));
+		enterValue(locateElement("xpath",props.getProperty("Median.CreateRule.SourceSystem.Xpath")),props.getProperty("WriteSourceSystemInCreateRule"));
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.selectSourceSystem.Xpath")));
 	  	  return this;
 	 }
 	public MedianCreateAndAuthRule selectDestinationSystem() {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.DestinationSystem.Xpath")));
 		wait(2000);
-	    clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.SelectDestinationSystem.Xpath")));
+		enterValue(locateElement("xpath",props.getProperty("Median.CreateRule.DestinationSystem.Xpath")),props.getProperty("WriteDestinationSystemInCreateRule"));
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.CreateRule.selectDestinationSystem.Xpath")));
 	  	  return this;
 	 }
 	public MedianCreateAndAuthRule clickNextButton() {

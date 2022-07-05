@@ -45,6 +45,8 @@ public class MedianCreateAccountClosureMaintenance extends MedianSpecificMethods
 		enterValue(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.TransCodeField.XPath")), props.getProperty("TransCodeField"));
 		wait(1000);
 		enterValue(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.NarrationField.XPath")), props.getProperty("NarrationField"));
+		wait(4000);
+		jsExecutor(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.ClickAddPair.XPath")));
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.AccountClosureMaintenance.ClickAddPair.XPath")));
 		return this;

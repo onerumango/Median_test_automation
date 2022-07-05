@@ -4,13 +4,15 @@ import base.MedianSpecificMethods;
 
 public class ProcesscodeMappingCreate extends MedianSpecificMethods{
 	public ProcesscodeMappingCreate clickExtSysCodeDropdown() {
-		wait(3000);
+		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("ProcesscodeMapping.Dropdown.Xpath")));
+		wait (2000);
+		enterValue(locateElement("xpath", props.getProperty("ProcesscodeMapping.Dropdown.Xpath")), props.getProperty("WriteExternalSystemCode"));
 		return this;
 	}
 	public ProcesscodeMappingCreate selectExtsysCode() {
 		wait(3000);
-		clickElement(locateElement("xpath", props.getProperty("ProcesscodeMapping.ExtSysCode.Xpath")));
+		clickElement(locateElement("xpath", props.getProperty("ProcesscodeMapping.SelectDropdown.Xpath")));
 		return this;
 	}
 

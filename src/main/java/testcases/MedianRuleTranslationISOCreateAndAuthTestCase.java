@@ -14,6 +14,7 @@ public class MedianRuleTranslationISOCreateAndAuthTestCase extends MedianSpecifi
 		.clickRuleTranslationISO()
 		.clickNewButton()
 		.dropDownSourceSyetem()
+		.selectdropDownSourceSyetem()
 		.clickFetchButton()
 		.clickSaveButton()
 		.clickOkPopup()
