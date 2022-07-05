@@ -19,9 +19,15 @@ public class MedianRuleTranslationXML extends MedianSpecificMethods {
 		wait(2000);
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")));
 		wait(2000);
-		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.sourceSystemXML.xpath")));
+		enterValue(locateElement("xpath",props.getProperty("Median.RuleTranslation.dropDown.sourceSystem.Xpath")),props.getProperty("WritesourceSystemXML"));
 		return this;
 	}
+	public MedianRuleTranslationXML selectdropDownSourceSyetem() {
+		wait(2000);
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.dropDown.selectSourceSystem.Xpath")));
+		return this;
+	}
+	
 	
 	
 	public MedianRuleTranslationXML fileUpload() throws AWTException {
