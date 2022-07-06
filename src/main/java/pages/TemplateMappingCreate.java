@@ -87,15 +87,18 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	
 	
 	public TemplateMappingCreate fillCcyCdDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCd.Xpath")), props.getProperty("ccyCd"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDTDropdown.Xpath")));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDatatype.Xpath")));
 		wait(1000);
-		String cssPath = "div.checkboxdiv div.checkStyle label";
-		((JavascriptExecutor)driver).executeScript("document.querySelector(arguments[0],':after').click();",cssPath);
+		/*
+		 * String cssPath = "div.checkboxdiv div.checkStyle label";
+		 * ((JavascriptExecutor)driver).executeScript(
+		 * "document.querySelector(arguments[0],':after').click();",cssPath);
+		 */
 		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdHeaderName.Xpath")), props.getProperty("ccyCdHeaderName"));
 		wait(1000);
@@ -104,7 +107,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	    }
 	
 	public TemplateMappingCreate fillAmountDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.amount.Xpath")), props.getProperty("amount"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.amountDTDropdown.Xpath")));
@@ -118,7 +121,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	    }
 	
 	public TemplateMappingCreate fillAccountDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.account.Xpath")), props.getProperty("account"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountDTDropdown.Xpath")));
@@ -132,7 +135,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	    }
 	
 	public TemplateMappingCreate fillAccountBranchDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranch.Xpath")), props.getProperty("accountBranch"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.accountBranchDTDropdown.Xpath")));
@@ -145,7 +148,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 			return this;
 	    }
 	public TemplateMappingCreate fillDrCrDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCr.Xpath")), props.getProperty("drCr"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.drCrDTDropdown.Xpath")));
@@ -172,7 +175,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 			return this;
 	    }
 	public TemplateMappingCreate fillExchRateDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRate.Xpath")), props.getProperty("exchRate"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.exchRateDTDropdown.Xpath")));
@@ -185,7 +188,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 			return this;
 	    }
 	public TemplateMappingCreate fillValueDateDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDate.Xpath")), props.getProperty("valueDate"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.valueDateDTDropdown.Xpath")));
@@ -214,7 +217,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	    }
 	
 	public TemplateMappingCreate fillPeriodCodeDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCode.Xpath")), props.getProperty("periodCode"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.periodCodeDTDropdown.Xpath")));
@@ -228,7 +231,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	    }
 	
 	public TemplateMappingCreate fillAddlTextDetails() {
-		wait(1000);
+		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlText.Xpath")), props.getProperty("addlText"));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.addlTextDTDropdown.Xpath")));
@@ -243,7 +246,7 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 	
 	
 	public TemplateMappingCreate clickSave() {
-		wait(1000);
+		
 		jsExecutor(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.Save.Xpath")));
