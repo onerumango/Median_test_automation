@@ -4,9 +4,9 @@ import base.MedianSpecificMethods;
 
 public class ProcessCodeMappingEdit extends MedianSpecificMethods{
 	public ProcessCodeMappingEdit clickEdit() {
-		wait(3000);
+		wait(2000);
 		jsExecutor(locateElement("xpath", props.getProperty("ProcessCodeMappingEdit.Edit.Xpath")));
-		wait(3000);
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("ProcessCodeMappingEdit.Edit.Xpath")));
 		return this;
 	}
@@ -19,11 +19,11 @@ public class ProcessCodeMappingEdit extends MedianSpecificMethods{
 	  		return this;
 	      }
 	public ProcessCodeMappingEdit clickSave() {
-		wait(3000);
+		wait(1000);
 		jsExecutor(locateElement("xpath", props.getProperty("ProcessCodeMappingEdit.Save.Xpath")));
-		wait(3000);
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("ProcessCodeMappingEdit.Save.Xpath")));
-		wait(3000);
+		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("ProcessCodeMappingEdit.OK.Xpath")));
 		return this;
 	}

@@ -30,7 +30,7 @@ public class MedianLoginAndLogout extends MedianSpecificMethods {
 
 	public MedianDashboard clickSignInButton() throws InterruptedException {
 		clickElement(locateElement("xpath", props.getProperty("MedianLoginPage.GetOTP.Xpath")));
-		wait(20000);
+		wait(15000);
 		clickElement(locateElement("xpath", props.getProperty("MedianLoginPage.verify.Xpath")));
 		webDriverWait("Median -DTB Bank");
 		wait(3000);

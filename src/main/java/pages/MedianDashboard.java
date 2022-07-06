@@ -135,10 +135,10 @@ return new ProcesscodeMappingSummary();
 
 	}
 	
-	public MedianRuleTranslationXML clickRuleTranslationXML() {
+	public MedianRuleTranslationXMLCreateAndAuth clickRuleTranslationXML() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
 		wait(7000);
-		return new MedianRuleTranslationXML();
+		return new MedianRuleTranslationXMLCreateAndAuth();
 	}
 	public MedianRuleTranslationISOCreateAndAuth clickRuleTranslationISO() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));

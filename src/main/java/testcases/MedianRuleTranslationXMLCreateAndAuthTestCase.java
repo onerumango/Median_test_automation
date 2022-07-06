@@ -5,12 +5,14 @@ import java.awt.AWTException;
 import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
+import pages.MedianDashboard;
 import pages.MedianLoginAndLogout;
 
-public class MedianRuleTranslationXMLTC0006 extends MedianSpecificMethods{
+public class MedianRuleTranslationXMLCreateAndAuthTestCase extends MedianSpecificMethods{
 	@Test
 	public void runMedianLogin() throws InterruptedException, AWTException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
+		MedianDashboard md= new MedianDashboard();
 		login.enterMakerUsername()
 		.enterMakerPassword()
 		.clickSignInButton()
@@ -27,6 +29,18 @@ public class MedianRuleTranslationXMLTC0006 extends MedianSpecificMethods{
 	    .selectDataType2()
 	    .clickSaveButton()
 		.clickOkPopup();
+		
+md.clickUserName().clickLogout();
+		
+		MedianLoginAndLogout login1 = new MedianLoginAndLogout();
+		login1.enterCheckerUsername()
+		.enterCheckerPassword()
+		.clickSignInButton()
+		.clickSystemInterface()
+		.clickRuleTranslationXML()
+		.clickSystemCode()
+		.clickAuth()
+		;
 	}
 
 }

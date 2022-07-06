@@ -4,25 +4,22 @@ import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
-import pages.MedianAddNewRole;
+import pages.MedianEditExternalSystem;
 
-public class EditTransactionCodeMaintenance extends MedianSpecificMethods {
+public class MedianExternalSystemEditTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
 		login.enterMakerUsername()
 		.enterMakerPassword()
 		.clickSignInButton()
-		.selectEditTransactioMaintenance()
-		.clickUserID()
-		.clickEdit()
+		.clickfileUploadMaintenance()
+		.clickexternalSystem()
+		.selectEdit()
 				/*
-				 * .clearTrnCode() .reEntertrncode()
+				 * .enterExternalSystemCode() .enterExternalSystemName() .selectDepartment()
 				 */
-		.clearTrnDesc()
-		.reEntertrnDesc()
-		.clickSave()
-		.clickOk();
+		.clickSaveButton();
+		
 	}
 }
-
