@@ -6,7 +6,7 @@ import base.MedianSpecificMethods;
 import pages.MedianDashboard;
 import pages.MedianLoginAndLogout;
 
-public class MedianCreateAndAuthRuleTestCase extends MedianSpecificMethods{
+public class MedianCreateRuleAddAndAuthTestCase extends MedianSpecificMethods{
 	@Test
 	public void runMedianCreateRule() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();

@@ -144,7 +144,7 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 	public MedianAddSystemJSON dataTypeNumeric() {
 		selectByIndex(locateElement("xpath",
 				props.getProperty("Median.SystemInterface.AddSystem.Header&ServiceDetails.DataTypeNumeric.Xpath")), 0);
-		wait(10000);
+		wait(2000);
 		return this;
 	}
 
@@ -164,7 +164,7 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 						props.getProperty(
 								"Median.SystemInterface.AddSystem.Header&ServiceDetails.EncriptionTypeBase64.Xpath")),
 				1);
-		wait(10000);
+		wait(2000);
 		return this;
 	}
 	public MedianAddSystemJSON clickPlusButton() {
@@ -196,7 +196,7 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 						props.getProperty(
 								"Median.SystemInterface.AddSystem.Header&ServiceDetails.DataTypeAlphaNumeric.Xpath")),
 				1);
-		wait(10000);
+		wait(2000);
 		return this;
 	}
 
@@ -216,7 +216,7 @@ public class MedianAddSystemJSON extends MedianSpecificMethods {
 						props.getProperty(
 								"Median.SystemInterface.AddSystem.Header&ServiceDetails.EncriptionTypeSha256.Xpath")),
 				2);
-		wait(10000);
+		wait(2000);
 		return this;
 	}
 

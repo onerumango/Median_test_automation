@@ -4,9 +4,9 @@ import org.testng.annotations.Test;
 
 import base.MedianSpecificMethods;
 import pages.MedianLoginAndLogout;
-import pages.MedianEditRole;
+import pages.MedianAddNewRole;
 
-public class MedinEditRoleTC01 extends MedianSpecificMethods {
+public class MedianRoleCreateTestCase extends MedianSpecificMethods {
 	@Test
 	public void runMedianLogin() throws InterruptedException {
 		MedianLoginAndLogout login = new MedianLoginAndLogout();
@@ -15,7 +15,16 @@ public class MedinEditRoleTC01 extends MedianSpecificMethods {
 		.clickSignInButton()
 		.selectSystemMaintenance()
 		.selectrole()
-		.selectEdit()
+		.selectNew()
+		.enterRoleName()
+		.enterRoleDescription()
+		.selectSystemMaintenance1()
+		.selectSystemParamMaintenance()
+		.selectSystemInterface()
+		.selectFileUploadMaintenance()
+		.selectFileupload()
+		.selectAccountBlock()
+		.selectAccountClosure()
 		.clickSaveButton();
 		
 	}
