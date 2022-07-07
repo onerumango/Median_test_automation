@@ -61,7 +61,8 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 		 * props.getProperty("TemplateMappingCreate.Mandatory1.Xpath"));
 		 * action.moveToElement(mandatory).click().build().perform();
 		 */
-		String cssPath = "div.checkboxdiv div.checkStyle label";
+		
+		String cssPath = "div.checkboxdiv div.checkStyle";
 		((JavascriptExecutor)driver).executeScript("document.querySelector(arguments[0],':before').click();",cssPath);
 		
 		return this;
@@ -94,11 +95,10 @@ public class TemplateMappingCreate extends MedianSpecificMethods{
 		wait(1000);
 		clickElement(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdDatatype.Xpath")));
 		wait(1000);
-		/*
-		 * String cssPath = "div.checkboxdiv div.checkStyle label";
-		 * ((JavascriptExecutor)driver).executeScript(
-		 * "document.querySelector(arguments[0],':after').click();",cssPath);
-		 */
+		
+		String cssPath = "div.checkboxdiv div.checkStyle";
+		((JavascriptExecutor)driver).executeScript("document.querySelector(arguments[1],':before').click();",cssPath);
+		 
 		
 		enterValue(locateElement("xpath", props.getProperty("TemplateMappingCreate.ccyCdHeaderName.Xpath")), props.getProperty("ccyCdHeaderName"));
 		wait(1000);
