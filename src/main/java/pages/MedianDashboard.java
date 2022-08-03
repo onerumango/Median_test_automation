@@ -145,6 +145,13 @@ return new ProcesscodeMappingSummary();
 		wait(7000);
 		return new MedianRuleTranslationISOCreateAndAuth();
 	}
+	
+	public MedianRuleTranslationDBCreateAndAuth clickRuleTranslationDB() {
+		clickElement(locateElement("xpath", props.getProperty("Median.RuleTranslation.Xpath")));
+		wait(7000);
+		return new MedianRuleTranslationDBCreateAndAuth();
+	}
+	
 	public MedianRuleMappingCreateAndAuth clickRuleMapping() {
 		clickElement(locateElement("xpath", props.getProperty("Median.RuleMapping.LeftNavigation")));
 		wait(7000);
